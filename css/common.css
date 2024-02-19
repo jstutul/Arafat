@@ -3,8 +3,8 @@
 ================================*/
 :root {
     --maincolor: #000000;
-    --darkmaincolor: #70E87C;    
-    --lighashcolor: #F0F0F2;
+    --darkmaincolor: #70e87c;
+    --lighashcolor: #f0f0f2;
     --dashcolor: #545454;
 }
 
@@ -13,13 +13,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: var(--maincolor);
 }
 
 main {
     flex: 1;
 }
 
-main .loginform label{
+main .loginform label {
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -36,13 +37,13 @@ main .brandbutton:active {
 .navbar-collapse {
     flex-grow: 0;
 }
-    /*=====  End of uiversal  ======*/
-    /*===============================
+/*=====  End of uiversal  ======*/
+/*===============================
 =            header            =
 ===============================*/
-    header {
-        box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
-    }
+header {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
 header .navbar {
     background-color: var(--maincolor);
 }
@@ -59,14 +60,13 @@ header .navbar .nav-link.active:hover,
 header .navbar .nav-link.active:focus {
     color: var(--lighashcolor);
 }
-header .navbar .nav-link.active{
+header .navbar .nav-link.active {
     color: var(--darkmaincolor);
 }
-header .navbar-nav .nav-link:active{
+header .navbar-nav .nav-link:active {
     color: var(--darkmaincolor);
 }
 /*=====  End of header  ======*/
-
 
 .copyright {
     display: flex;
@@ -77,11 +77,12 @@ header .navbar-nav .nav-link:active{
     justify-content: space-between;
     font-size: 14px;
 }
-.copyright .left-side{
+.copyright .left-side {
     display: flex;
-    gap:10px;
+    gap: 10px;
 }
-.copyright .left-side .s-link img,.copyright .right-side .s-link img{
+.copyright .left-side .s-link img,
+.copyright .right-side .s-link img {
     height: 30px;
 }
 
@@ -93,7 +94,8 @@ header .navbar-nav .nav-link:active{
         line-height: 1;
         color: rgba(var(--bs-emphasis-color-rgb), 0.65);
         background-color: transparent;
-        border: var(--bs-border-width) solid rgba(var(--bs-emphasis-color-rgb), 0.15);
+        border: var(--bs-border-width) solid
+            rgba(var(--bs-emphasis-color-rgb), 0.15);
         border-radius: var(--bs-border-radius);
         transition: var(--bs-navbar-toggler-transition);
         display: inline-block;
@@ -108,14 +110,113 @@ header .navbar-nav .nav-link:active{
         background-position: center;
         background-size: 100%;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }    
-    /*=====  footer  ======*/    
+    }
+    /*=====  footer  ======*/
     .copyright {
         flex-direction: column;
         text-align: center;
     }
-    
 }
 /*=====  End of footer  ======*/
+.heading-section {
+    margin-top: 114px;
+    margin-bottom: 120px;
+}
+main .heading-title {
+    color: var(--darkmaincolor);
+}
 
+/* my work  */
 
+.row .single-work {
+    height: 460px;
+    border: 1px solid #fff;
+    border-radius: 11px;
+    overflow: hidden;
+    background-color: var(--maincolor) !important;
+}
+.single-work .card-img {
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+}
+.card-img img {
+    padding-top: 102px;
+    padding-bottom: 102px;
+    padding-left: 48.86px;
+    padding-right: 78.17px;
+}
+.single-work .card-body {
+    padding-left: 46px;
+    padding-right: 64px;
+}
+.single-work .card-body h5 {
+    color: #fff;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162.523%; /* 39.005px */
+}
+.card-body .b-desg {
+    color: #bababa;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 22.753px */
+}
+.card-body .b-desg img {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+}
+.card-body .b-text {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 26.004px */
+}
+/* my work end  */
+
+/* protfolio */
+
+.bprotfolio {
+    margin-top: 70px;
+}
+.bprotfolio img {
+    margin-bottom: 17px;
+}
+.bprotfolio .p-title {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 162.523%; /* 45.506px */
+}
+.bprotfolio-gallary .card img {
+    /* width: 310px; */
+    height: 239px;
+    flex-shrink: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--dashcolor);
+    background-color: var(--darkmaincolor);
+}
+
+.carousel-indicators .active {
+    background-color: var(--maincolor);
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: var(--darkmaincolor);
+}
