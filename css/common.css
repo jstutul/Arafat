@@ -2,8 +2,8 @@
 =            uiversal            =
 ================================*/
 :root {
-    --brandcolor: #005E9C;
-    --darkbrandcolor: #2DA6A0;    
+    --maincolor: #000000;
+    --darkmaincolor: #70E87C;    
     --lighashcolor: #F0F0F2;
     --dashcolor: #545454;
 }
@@ -24,14 +24,14 @@ main .loginform label{
     margin-bottom: 5px;
 }
 main .titletxt {
-    color: var(--brandcolor);
+    color: var(--maincolor);
 }
 main .brandbutton,
 main .brandbutton:hover,
 main .brandbutton:focus,
 main .brandbutton:active {
-    background-color: var(--brandcolor);
-    color: var(--bs-white);
+    background-color: var(--maincolor);
+    color: var(--darkmaincolor);
 }
 .navbar-collapse {
     flex-grow: 0;
@@ -44,11 +44,11 @@ main .brandbutton:active {
         box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
     }
 header .navbar {
-    background-color: var(--brandcolor);
+    background-color: var(--maincolor);
 }
 header .navbar-brand,
 header .navbar-brand:hover {
-    color: var(--bs-white);
+    color: var(--lighashcolor);
 }
 header .navbar .nav-link,
 header .navbar .nav-link:hover,
@@ -57,22 +57,32 @@ header .navbar .nav-link:focus,
 header .navbar .nav-link.active,
 header .navbar .nav-link.active:hover,
 header .navbar .nav-link.active:focus {
-    color: var(--bs-white);
+    color: var(--lighashcolor);
+}
+header .navbar .nav-link.active{
+    color: var(--darkmaincolor);
+}
+header .navbar-nav .nav-link:active{
+    color: var(--darkmaincolor);
 }
 /*=====  End of header  ======*/
+
+
 .copyright {
     display: flex;
     align-items: center;
-    background: var(--darkbrandcolor);
-    color: var(--bs-white);
+    background: var(--maincolor);
+    color: var(--lighashcolor);
     padding: 5px 10px;
     justify-content: space-between;
     font-size: 14px;
 }
-.copyright .ucas img {
-    width: 100%;
-    max-width: 50px;
-    margin-left: 10px;
+.copyright .left-side{
+    display: flex;
+    gap:10px;
+}
+.copyright .left-side .s-link img,.copyright .right-side .s-link img{
+    height: 30px;
 }
 
 @media (max-width: 991px) {
@@ -104,6 +114,7 @@ header .navbar .nav-link.active:focus {
         flex-direction: column;
         text-align: center;
     }
+    
 }
 /*=====  End of footer  ======*/
 
