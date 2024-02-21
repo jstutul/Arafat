@@ -122,3 +122,6 @@ header .navbar-nav .nav-link:active {
     text-align: center;
 }
 /*=====  End of footer  ======*/
+main .heading-title {
+    color: var(--darkmaincolor);
+}
