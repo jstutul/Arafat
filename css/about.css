@@ -1,0 +1,97 @@
+.about-heading {
+    margin-top: 70px;
+}
+
+.about-heading .about-title {
+    color: var(--ffffff, #fff);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%;
+}
+.about-heading p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 26.004px */
+}
+
+.about-heading .img-section img {
+    width: 100%;
+}
+
+.nav .nav-item button.active {
+    background-color: transparent;
+    color: var(--darkmaincolor) !important;
+}
+.nav .nav-item button.active::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav .nav-item button {
+    padding: 0;
+    color: var(--ffffff, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 36px;
+}
+.about-section {
+    margin-top: 94px;
+}
+.tab-content .tab-title {
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 0px;
+}
+
+.tab-content .tab-pane .text-yel {
+    color: var(--2, #fbff28);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+}
+.tab-content .tab-pane p {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%;
+}
+.tab-content .tab-pane .fiver {
+    margin: 0px 12px;
+}
+
+.tab-pane .exp-gpd {
+    color: #067ebe;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+}
+.tab-pane .exp-uiux {
+    color: #ad7aff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.tab-pane .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 13px;
+    padding: 0px;
+    object-fit: fill;
+}
