@@ -41,9 +41,57 @@
     font-style: normal;
     font-weight: 700 !important;
     line-height: 36px;
+    text-align: left;
 }
 .about-section {
     margin-top: 94px;
+}
+
+.tab-custome{
+    display: flex;
+    align-items: start;
+}
+@media only screen and (max-width: 600px) {
+    .tab-custome{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    #pills-tab{
+        width: 100% !important;
+       
+    }
+    #pills-tab li button{
+        width: 100% !important;
+        text-align: center;
+    }
+    .tab-content .tab-pane .text-yel {
+        font-size: 16px !important;
+    }
+    .tab-content .tab-pane p {
+        font-size: 16px !important;
+    }
+    .tab-content .tab-pane span img{
+        width: 20px;
+        height: 20px;
+    }
+    .tab-content .tab-pane .fiver {
+        margin: 0px 8px;
+    }
+    
+    .tab-pane .exp-gpd {
+        font-size: 16px !important;
+    }
+    .tab-pane .exp-uiux {
+        font-size: 16px !important;
+    }
+    
+    .tab-pane .icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+
 }
 .tab-content .tab-title {
     color: #fff;
