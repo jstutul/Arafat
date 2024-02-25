@@ -37,7 +37,7 @@
 .nav .nav-item button {
     padding: 0;
     color: var(--ffffff, #fff);
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700 !important;
     line-height: 36px;
@@ -67,6 +67,9 @@
     }
     .tab-content .tab-pane .text-yel {
         font-size: 16px !important;
+    }
+    .tab-content .tab-pane p .res-icon{
+        display: block;
     }
     .tab-content .tab-pane p {
         font-size: 16px !important;
@@ -115,7 +118,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.523%;
+    line-height: 35px;
 }
 .tab-content .tab-pane .fiver {
     margin: 0px 12px;
