@@ -47,54 +47,51 @@
     margin-top: 94px;
 }
 
-.tab-custome{
+.tab-custome {
     display: flex;
     align-items: start;
 }
 @media only screen and (max-width: 600px) {
-    .tab-custome{
+    .tab-custome {
         display: flex;
         overflow: hidden;
         flex-direction: column;
     }
-    #pills-tab{
+    #pills-tab {
         width: 100% !important;
-       
     }
-    #pills-tab li button{
+    #pills-tab li button {
         width: 100% !important;
         text-align: center;
     }
     .tab-content .tab-pane .text-yel {
         font-size: 16px !important;
     }
-    .tab-content .tab-pane p .res-icon{
+    .tab-content .tab-pane p .res-icon {
         display: block;
     }
     .tab-content .tab-pane p {
         font-size: 16px !important;
     }
-    .tab-content .tab-pane span img{
+    .tab-content .tab-pane span img {
         width: 20px;
         height: 20px;
     }
     .tab-content .tab-pane .fiver {
         margin: 0px 8px;
     }
-    
+
     .tab-pane .exp-gpd {
         font-size: 16px !important;
     }
     .tab-pane .exp-uiux {
         font-size: 16px !important;
     }
-    
+
     .tab-pane .icon {
         width: 20px;
         height: 20px;
     }
-    
-
 }
 .tab-content .tab-title {
     color: #fff;
@@ -147,10 +144,50 @@
     object-fit: fill;
 }
 
-.learning-text{
+.learning-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: center;
+}
+.icon-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-zone .col {
+    width: auto;
+    overflow: hidden;
+    height: 38px;
+    margin: 0px 6px;
+    flex: none;
+}
+.icon-zone img {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+.pan-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+.accordion .acc-list {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.accordion-item {
+    color: #000000;
+    border: none;
+    background-color: #000000;
+}
+.accordion-button {
+    background: #000000 !important;
+    color: #fff;
+}
+.accordion-button:not(.collapsed) {
+    color: #70e87c !important;
+    box-shadow: none;
 }
