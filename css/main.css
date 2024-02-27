@@ -4,7 +4,9 @@
 }
 
 /* my work  */
-
+.row .col a {
+    text-decoration: none;
+}
 .row .single-work {
     height: 460px;
     border: 1px solid #fff;
