@@ -42,6 +42,18 @@
     line-height: 23px;
     padding-left: 10px;
 }
+.text-yel {
+    color: var(--2, #fbff28);
+}
+.bdj-title {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+}
 /* mobile device  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .top-content {
