@@ -54,6 +54,54 @@
     font-weight: 400;
     line-height: 55px;
 }
+.d-title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0em;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 2px solid #70e87c;
+    margin-bottom: 10px;
+}
+#Overview p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    text-align: justify;
+}
+.btn-emp{
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #9D0191B2;
+    padding: 5px 17px;
+}
+.how-it-work .title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    vertical-align:middle !important;
+}
+.opt-sec li{
+    color: #fff;
+    font-size: 16px;
+    list-style-type: none
+}
+.sub-heading{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
 /* mobile device  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .top-content {

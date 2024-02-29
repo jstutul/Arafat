@@ -36,6 +36,7 @@
             padding: 1em;
             width: 14rem;
             line-height: 2;
+            position: sticky;
 
             ul {
                 list-style: none;
@@ -48,15 +49,23 @@
             }
 
             li a {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0em;
+                text-align: left;
                 display: inline-block;
-                color: #aaa;
+                color: #fff;
                 text-decoration: none;
                 transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
             }
 
             li.visible>a {
-                color: #111;
+                color: #70e87c;
                 transform: translate(5px);
+            }
+            ul li ul li a {
+                font-size: 12px;
             }
         }
 
@@ -77,8 +86,6 @@
             padding: 1em;
             max-width: 800px;
             font-size: 1.2em;
-            font-family: 'Frank Ruhl Libre', sans-serif;
-
             img {
                 max-width: 100%;
             }
@@ -99,14 +106,12 @@
                 background-color: #f9f9f9;
                 padding: 4px;
             }
-
-            h2,
-            h3 {
-                padding-top: 1em;
-            }
         }
 
-
+        table,td,th{
+            border-collapse: collapse;
+            border:1px solid #0B5F8C
+        }
         @media screen and (max-width: 1200px) {
 
             body {
@@ -224,7 +229,15 @@
                 <div class="col-lg-3">
                     <nav class="toc">
                         <ul>
-                            <li><a href="#topic1">Topic 1</a></li>
+                            <li><a href="#Overview">Overview</a>
+                                <ul>
+                                    <li><a href="#Problem">Problem</a></li>
+                                    <li><a href="#Solution">Solution </a></li>
+                                    <li><a href="#OurApproach">Our Approach </a></li>
+                                    <li><a href="#TeamContribution ">Team & My Contribution </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#topic1">Overview</a></li>
                             <li>
                                 <a href="#topic2">Topic 2</a>
                                 <ul>
@@ -251,6 +264,70 @@
                 </div>
                 <div class="col-lg-9">
                     <article class="contents">
+                        <section id="Overview">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center"><div class="d-title">Overview</div></div>
+                                    <p>Online tests are a common method used in the <span class="text-yel">recruitment process to assess a candidate's skills, knowledge, and abilities.</span> 
+                                        These tests can include cognitive ability tests, personality tests, and skills-based assessments. The test can perform with different method such as 
+                                        <span class="text-yel">Descriptive Test, MCQ Test, Combine Test (MCQ + Descriptive)</span>. The <span class="text-yel">employer has full access to </span>
+                                        set the test as per requirements. Online tests can also be used to evaluate candidates remotely, which can be useful in a <span class="text-yel">remote or virtual recruitment process.</span></p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="how-it-work">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td colspan="2"><h2 class="title px-4">How it Works? </h2></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="btn-sec p-4">
+                                                        <button class="btn-emp">Employee</button>
+                                                    </div>
+                                                    <div class="opt-sec">
+                                                        <ul>
+                                                            <li><span class="text-yel">Step 1:</span> Create step for online test</li>
+                                                            <li><span class="text-yel">Step 2:</span> Online test time & date</li>
+                                                            <li><span class="text-yel">Step 3:</span> Add Questions (It will securely store in bdjobs database)</li>
+                                                            <li><span class="text-yel">Step 4:</span> Marking</li>
+                                                            <li><span class="text-yel">Step 5:</span> Eligible candidate to the next stage</li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-sec p-4">
+                                                        <button class="btn-emp">Employee</button>
+                                                    </div>
+                                                    <div class="opt-sec">
+                                                        <ul>
+                                                            <li><span class="text-yel">Step 1:</span> Invitation from the company for online test</li>
+                                                            <li><span class="text-yel">Step 2:</span> Join from anywhere with bdjobs panel</li>
+                                                            <li><span class="text-yel">Step 3:</span> Button will be visible 5min before exam</li>
+                                                            <li><span class="text-yel">Step 4:</span>  Don’t switch the window otherwise exam will stop</li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="problem" id="Problem">
+                                        <h2 class="sub-heading">Problem</h2>
+                                        <p>The problem faced by companies is the difficulty <span class="text-yel">in finding suitable candidates for open positions,</span> and
+                                             the challenges that come with arranging and conducting in-person test and assessments. This is further compounded by the difficulty for candidates in attending these in-person test, <span class="text-yel">which limits the pool of potential hires.</span> 
+                                             It also increase <span class="text-yel">waste of time and money. </span></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="solution" id="Solution">
+                                        <h2 class="sub-heading">Solution</h2>
+                                        <p>Elevate your recruitment process with bdjobs' Online Test, a comprehensive <span class="text-yel">solution that efficiently assesses candidate skills, knowledge, and personality</span> while providing the flexibility of remote evaluation.</p>
+                                        <p>One solution to this problem is to <span class="text-yel">conduct virtual or online Exam.</span> This allows companies to reach a wider pool of candidates and eliminates the <span class="text-yel">need for in-person tests.</span> Additionally, it reduces the time and cost associated with arranging and conducting in-person assessments. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <section id="topic1">
                             <h2>Topic 1</h2>
                             <p>
@@ -455,12 +532,12 @@
         const date = new Date();
         let year = date.getFullYear();
         document.getElementById("copyDate").innerHTML = year;
-        var toc = document.querySelector('.toc');
-        var tocPath = document.querySelector('.toc-marker path');
+    </script>
+    <script>
+        var toc = $('.toc');
+        var tocPath = $('.toc-marker path');
         var tocItems;
 
-        // Factor of screen size that the element must cross
-        // before it's considered visible
         var TOP_MARGIN = 0.1,
             BOTTOM_MARGIN = 0.2;
 
@@ -469,19 +546,17 @@
         var lastPathStart,
             lastPathEnd;
 
-        window.addEventListener('resize', drawPath, false);
-        window.addEventListener('scroll', sync, false);
+        $(window).on('resize', drawPath);
+        $(window).on('scroll', sync);
 
         drawPath();
 
         function drawPath() {
+            tocItems = $('.toc li');
 
-            tocItems = [].slice.call(toc.querySelectorAll('li'));
-
-            // Cache element references and measurements
-            tocItems = tocItems.map(function (item) {
-                var anchor = item.querySelector('a');
-                var target = document.getElementById(anchor.getAttribute('href').slice(1));
+            tocItems = tocItems.map(function(index, item) {
+                var anchor = $(item).find('a');
+                var target = $('#' + anchor.attr('href').slice(1));
 
                 return {
                     listItem: item,
@@ -490,63 +565,53 @@
                 };
             });
 
-            // Remove missing targets
-            tocItems = tocItems.filter(function (item) {
-                return !!item.target;
+            tocItems = tocItems.filter(function(index, item) {
+                return !!item.target.length;
             });
 
             var path = [];
             var pathIndent;
 
-            tocItems.forEach(function (item, i) {
-
-                var x = item.anchor.offsetLeft - 5,
-                    y = item.anchor.offsetTop,
-                    height = item.anchor.offsetHeight;
+            tocItems.each(function(i, item) {
+                var x = item.anchor.position().left - 5,
+                    y = item.anchor.position().top,
+                    height = item.anchor.outerHeight();
 
                 if (i === 0) {
                     path.push('M', x, y, 'L', x, y + height);
                     item.pathStart = 0;
-                }
-                else {
-                    // Draw an additional line when there's a change in
-                    // indent levels
+                } else {
                     if (pathIndent !== x) path.push('L', pathIndent, y);
 
                     path.push('L', x, y);
 
-                    // Set the current path so that we can measure it
-                    tocPath.setAttribute('d', path.join(' '));
-                    item.pathStart = tocPath.getTotalLength() || 0;
+                    tocPath.attr('d', path.join(' '));
+                    item.pathStart = tocPath[0].getTotalLength() || 0;
 
                     path.push('L', x, y + height);
                 }
 
                 pathIndent = x;
 
-                tocPath.setAttribute('d', path.join(' '));
-                item.pathEnd = tocPath.getTotalLength();
-
+                tocPath.attr('d', path.join(' '));
+                item.pathEnd = tocPath[0].getTotalLength();
             });
 
-            pathLength = tocPath.getTotalLength();
+            pathLength = tocPath[0].getTotalLength();
 
             sync();
-
         }
 
         function sync() {
-
-            var windowHeight = window.innerHeight;
+            var windowHeight = $(window).height();
 
             var pathStart = pathLength,
                 pathEnd = 0;
 
             var visibleItems = 0;
 
-            tocItems.forEach(function (item) {
-
-                var targetBounds = item.target.getBoundingClientRect();
+            tocItems.each(function(index, item) {
+                var targetBounds = item.target[0].getBoundingClientRect();
 
                 if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
                     pathStart = Math.min(item.pathStart, pathStart);
@@ -554,31 +619,26 @@
 
                     visibleItems += 1;
 
-                    item.listItem.classList.add('visible');
+                    $(item.listItem).addClass('visible');
+                } else {
+                    $(item.listItem).removeClass('visible');
                 }
-                else {
-                    item.listItem.classList.remove('visible');
-                }
-
             });
 
-            // Specify the visible path or hide the path altogether
-            // if there are no visible items
             if (visibleItems > 0 && pathStart < pathEnd) {
                 if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
-                    tocPath.setAttribute('stroke-dashoffset', '1');
-                    tocPath.setAttribute('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
-                    tocPath.setAttribute('opacity', 1);
+                    tocPath.attr('stroke-dashoffset', '1');
+                    tocPath.attr('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+                    tocPath.attr('opacity', 1);
                 }
-            }
-            else {
-                tocPath.setAttribute('opacity', 0);
+            } else {
+                tocPath.attr('opacity', 0);
             }
 
             lastPathStart = pathStart;
             lastPathEnd = pathEnd;
-
         }
+
     </script>
 </body>
 
