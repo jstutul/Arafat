@@ -54,7 +54,7 @@
     font-weight: 400;
     line-height: 55px;
 }
-.d-title{
+.d-title {
     font-size: 40px;
     font-weight: 700;
     line-height: 65px;
@@ -64,7 +64,7 @@
     border-bottom: 2px solid #70e87c;
     margin-bottom: 10px;
 }
-#Overview p{
+#Overview p {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -73,34 +73,69 @@
     color: #fff;
     text-align: justify;
 }
-.btn-emp{
+.btn-emp {
     border-radius: 8px;
     border: none;
     color: #fff;
-    background-color: #9D0191B2;
+    background-color: #9d0191b2;
     padding: 5px 17px;
 }
-.how-it-work .title{
+.how-it-work .title {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: left;
-    vertical-align:middle !important;
+    vertical-align: middle !important;
 }
-.opt-sec li{
+.opt-sec li {
     color: #fff;
     font-size: 16px;
-    list-style-type: none
+    list-style-type: none;
 }
-.sub-heading{
+.sub-heading {
     font-size: 24px;
     font-weight: 600;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+}
+.ourApproach .apr {
+    width: 182px;
+    padding: 13px 0px;
+    height: 50px;
+    border-radius: 12px;
+    background: #d9d9d9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+.ourApproach .svg {
+    width: 60px !important;
+    text-align: center !important;
+}
+.ourApproach .g-green {
+    border-radius: 8px;
+    background: #024208;
+    padding: 10px;
+    text-align: center;
+    color: #0a7714;
+}
+.ourApproach .g-green-lg {
+    border-radius: 8px;
+    background: #024208;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+.ourApproach .g-green-lg ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0px 15px;
 }
 /* mobile device  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -119,5 +154,15 @@
     }
     .top-image img {
         padding: 15px;
+    }
+    .ourApproach .svg {
+        display: none !important;
+    }
+    .ourApproach .apr {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .ourApproach .ddflex {
+        flex-direction: column;
     }
 }
