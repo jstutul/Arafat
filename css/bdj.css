@@ -137,6 +137,279 @@
     text-align: left;
     padding: 0px 15px;
 }
+
+.research .r-single {
+}
+
+.research .r-single.first {
+    background-color: #f8754f;
+    color: #333333;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    height: 41px;
+    font-weight: 600;
+    text-align: center;
+}
+.research .r-single.second {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 5px;
+    height: 41px;
+    font-weight: 600;
+    text-align: center;
+}
+.research .r-single.third {
+    background-color: #ffa629;
+    color: #333333;
+    padding: 10px 16px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.research .option {
+    background-color: #ffbdae;
+    height: 128px;
+    padding: 10px;
+    font-size: 8px;
+}
+.option p,
+.option1 p,
+.option2 p {
+    font-weight: 600;
+}
+.research .option1 {
+    background-color: #75d7f0;
+    height: 128px;
+    padding: 10px;
+    font-size: 8px;
+}
+.research .option2 {
+    background-color: #ffd966;
+    height: 128px;
+    padding: 10px;
+    font-size: 8px;
+}
+.CompetitiveAnalysis p,
+.CompetitiveAnalysis ul li {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+#competitivetable tr th {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+#competitivetable tr td {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #fff;
+    text-align: center;
+}
+#competitivetable ol li {
+    font-size: 14px;
+    color: var(--2, #fbff28);
+    text-align: left;
+}
+.userInterview p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.userInterview .apr {
+    width: 128px;
+    padding: 5px;
+}
+.ddflex .op1 {
+    background-color: #d2ffae;
+}
+.ddflex .op2 {
+    background-color: #ffbdae;
+}
+.ddflex .op3 {
+    background-color: #75d7f0;
+}
+.ddflex .op4 {
+    background-color: #ffd966;
+}
+.ddflex .op5 {
+    background-color: #ffaeae;
+}
+.ddflex .op1 p,
+.ddflex .op2 p,
+.ddflex .op3 p,
+.ddflex .op4 p,
+.ddflex .op5 p {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.011em;
+    text-align: left;
+}
+.ddflex .op1 ul,
+.ddflex .op2 ul,
+.ddflex .op3 ul,
+.ddflex .op4 ul,
+.ddflex .op5 ul {
+    padding: 0px 15px;
+}
+.ddflex .op1 ul li,
+.ddflex .op2 ul li,
+.ddflex .op3 ul li,
+.ddflex .op4 ul li,
+.ddflex .op5 ul li {
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.011em;
+    text-align: left;
+}
+.userInterview .svg {
+    width: 60px !important;
+    text-align: center !important;
+}
+.userInterview .user-top {
+    background-color: #ffd966;
+    padding: 10px;
+    min-height: 170px;
+    /* min-width: 222px; */
+}
+.userInterview .user-bottom {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.userInterview .user-top ul {
+    padding: 0px 10px;
+}
+.userInterview .user-top p,
+.userInterview .user-top ul li {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333333;
+}
+
+.aff-map .option {
+    background-color: #d2ffae;
+    padding: 10px;
+    font-size: 8px;
+}
+.aff-map .option p {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333333;
+}
+.aff-map .option ul {
+    padding: 0px 10px;
+}
+.aff-map .option ul li {
+    color: #333333;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.011em;
+    text-align: left;
+}
+
+.aff-map .option-aff {
+    background-color: #ffd966;
+    padding: 10px;
+    font-size: 8px;
+}
+.aff-map .option-aff p {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333333;
+}
+.aff-map .option-aff ul {
+    padding: 0px 10px;
+}
+.aff-map .option-aff ul li {
+    color: #333333;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.011em;
+    text-align: left;
+}
+.aff-map .option-action {
+    background-color: #ffbdae;
+    padding: 10px;
+    font-size: 8px;
+}
+.aff-map .option-action p {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #333333;
+}
+.aff-map .option-action ul {
+    padding: 0px 10px;
+}
+.aff-map .option-action ul li {
+    color: #333333;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.011em;
+    text-align: left;
+}
+
+.designIdeation p,
+.sketchesWireframes p,
+.designGuidelines p,
+.accessibility p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.job-text {
+    color: #333333 !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    line-height: 10px !important;
+    letter-spacing: -0.011em;
+    text-align: left;
+    padding: 10px;
+    background-color: #fbff28;
+}
 /* mobile device  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .top-content {
@@ -164,5 +437,16 @@
     }
     .ourApproach .ddflex {
         flex-direction: column;
+    }
+    .option p,
+    .option1 p,
+    .option2 p {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .option span,
+    .option1 span,
+    .option2 span {
+        font-size: 14px;
     }
 }
