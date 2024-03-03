@@ -24,11 +24,107 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/bproperty.css" />
+    <style>
+        .toc {
+            left: 14rem;
+            top: 2em;
+            padding: 1em;
+            width: 16rem;
+            line-height: 0;
+            position: sticky;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul ul {
+                padding-left: 2em;
+            }
+
+            li a {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                display: inline-block;
+                color: #fff;
+                text-decoration: none;
+                transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+            }
+
+            li.visible>a {
+                color: #70e87c;
+                transform: translate(5px);
+            }
+
+            ul li ul li a {
+                font-size: 12px;
+            }
+        }
+
+        .toc-marker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+
+        .contents {
+            padding: 1em;
+            max-width: 800px;
+            font-size: 1.2em;
+
+            img {
+                max-width: 100%;
+            }
+
+            .code-block {
+                white-space: pre;
+                overflow: auto;
+                max-width: 100%;
+
+                code {
+                    display: block;
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                }
+            }
+
+            .code-inline {
+                background-color: #f9f9f9;
+                padding: 4px;
+            }
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border: 1px solid #0B5F8C
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            body {
+                font-size: 14px;
+            }
+
+        }
+    </style>
 </head>
 
 
@@ -72,10 +168,1308 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 contact-heading">
-                    <h2 class="text-white text-center my-4">
-                        Feel free to <span class="heading-title">B Property</span> me
+                <div class="col-lg-12 top-banner">
+                    <div class="row top-content">
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="/images/works/bdj/icon-bdj.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-12 online-exam">
+                                    <img src="/images/works/bdj/onlinexam.svg" alt="">
+                                    <h2 class="banner-title">Online Test</h2>
+                                </div>
+                                <div class="col-lg-12 banner-des">
+                                    <p class="">94% Faster Hiring | 20k+ Participated | 96% User Satisfaction
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 work-list">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img src="/images/works/bdj/right.svg" alt="right">
+                                            <span>Jobseeker Panel</span>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <img src="/images/works/bdj/right.svg" alt="right">
+                                            <span>Descriptive Test</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img src="/images/works/bdj/right.svg" alt="right">
+                                            <span>Employee Panel</span>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <img src="/images/works/bdj/right.svg" alt="right">
+                                            <span>MCQ Test</span>
+                                        </div>
+                                    </div>
+                                    <div class="row text-right">
+                                        <div class="col-lg-6"></div>
+                                        <div class="col-lg-6">
+                                            <img src="/images/works/bdj/right.svg" alt="right">
+                                            <span>Combine Test (MCQ + Descriptive)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 top-image d-sm-none d-md-block">
+                            <img src="/images/works/bdj/fg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="bdj-title">
+                        <span class="text-yel">Expora:</span> Complete Property Management software. Client/ Lead
+                        Management, CRM, Task Management &
+                        Valuation everything is one place
                     </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 d-none d-sm-block">
+                    <nav class="toc">
+                        <ul>
+                            <li><a href="#Overview">Overview</a>
+                                <ul>
+                                    <li><a href="#Problem">Problem</a></li>
+                                    <li><a href="#Solution">Solution </a></li>
+                                    <li><a href="#OurApproach">Our Approach </a></li>
+                                    <li><a href="#TeamContribution ">Team & My Contribution </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Research">Research</a>
+                                <ul>
+                                    <li><a href="#CompetitiveAnalysis">Competitive Analysis </a></li>
+                                    <li><a href="#UnderstandingExistingSystem">Understanding Existing System</a></li>
+                                    <li><a href="#UserPersona">User Persona</a></li>
+                                    <li><a href="#Mapping">Mapping</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Design">Design</a>
+                                <ul>
+                                    <li><a href="#DesignIdeation">Design Ideation </a></li>
+                                    <li><a href="#SketchesWireframes">Sketches & Wireframes</a></li>
+                                    <li><a href="#DesignGuidelines ">Design Guidelines </a></li>
+                                    <li><a href="#Accessibility">Accessibility </a></li>
+                                    <li><a href="#HighFidelityDesign ">High Fidelity Design </a></li>
+                                    <li><a href="#UserFeedbackRevised ">User Feedback & Revised </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#EvaluationIterations">Evaluation & Iterations </a>
+                                <ul>
+                                    <li><a href="#UserTestingProcess">User Testing Process</a></li>
+                                    <li><a href="#MeasuringSuccess">Measuring Success </a></li>
+                                    <li><a href="#ResultsMetrics">Results and Metrics</a></li>
+                                    <li><a href="#FeedbackDesignIterations">Feedback & Design Iterations </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#TeamFeedback">Team Feedback</a>
+                            </li>
+                        </ul>
+                        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                                stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+                        </svg>
+                    </nav>
+                </div>
+                <div class="col-lg-9">
+                    <article class="contents">
+                        <section id="Overview">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Overview</div>
+                                    </div>
+                                    <p>Expora is a comprehensive property management software designed to simplify the
+                                        way Bproperty handles its diverse range of property services. It serves as a
+                                        unified platform for managing everything from <span class="text-yel">property
+                                            listings to client
+                                            interactions.</span> With Expora, Bproperty's 500+ employees can <span
+                                            class="text-yel">streamline
+                                            workflows,
+                                            collaborate more effectively,</span> and provide clients with a seamless
+                                        experience in
+                                        buying, selling, and renting properties. This user-friendly solution
+                                        revolutionizes property management, setting new standards for efficiency in the
+                                        prop-tech industry.
+                                    </p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="problem" id="Problem">
+                                        <h2 class="sub-heading">Problem</h2>
+                                        <p>Bproperty faced challenges managing its diverse property services.<span
+                                                class="text-yel">
+                                                Using
+                                                multiple tools led to confusion and inefficiency among its 500
+                                                employees.
+                                            </span>
+                                            They needed a unified solution to streamline workflows and provide clients
+                                            with better service. Expora was born to solve these problems, making
+                                            property management simpler and more effective for Bproperty and its
+                                            clients.</p>
+                                        <div class="text-center">
+                                            <img src="images/works/brpo/problem.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="solution" id="Solution">
+                                        <h2 class="sub-heading">Solution</h2>
+                                        <p><span class="text-yel">Expora bring them all together in one place.</span>
+                                            Expora is the comprehensive
+                                            solution designed to unify Bproperty's property management processes. With
+                                            intuitive interfaces, seamless integration, and powerful features, Expora
+                                            <span class="text-yel">streamlines workflows, enhances team
+                                                collaboration,</span> and delivers exceptional
+                                            client experiences, setting new standards in prop-tech efficiency.
+                                        </p>
+                                        <div class="text-center">
+                                            <img src="images/works/brpo/problem.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="ourApproach" id="OurApproach">
+                                        <h2 class="sub-heading">Our Approach</h2>
+                                        <p>As a UX designer, I organized a meeting to start our design work. I brought
+                                            together the team and the people interested in our project. We made a list
+                                            of important goals for the future.<span class="text-yel">The big idea: 'We
+                                                have to learn more
+                                                about our users,'</span> which means we want to focus on what users need
+                                            and like.
+                                        </p>
+                                        <div class="row row-cols-1 row-cols-md-5 g-2 mt-2">
+                                            <div class="col">
+                                                <div class="option">Empathize</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Define</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Ideation</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Prototype</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Test</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="TeamContribution" id="TeamContribution">
+                                        <h2 class="sub-heading">Team & My Contribution </h2>
+                                        <p>In Bproperty there was no dedicated in house IT team. Although we had a
+                                            remote development team in Pakistan, UAE & Philippines. I worked with the
+                                            only Product manager and was a part of BI (Business Intelligence) team.
+                                        </p>
+                                        <p>
+                                            <span class="text-yel">I was the only UI UX designer as well as
+                                                researcher.</span> Me & my product manager
+                                            discussed about the business and user needs. After that I took the design
+                                            decision and iterate with the team. I also made the clickable prototype so
+                                            that the team can simulate better and take real time experience.
+                                        </p>
+                                        <p>The team was small so I had some challenges but also had the opportunity to
+                                            learn new things. That time I learned more about product management and
+                                            helped</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="Research">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Research</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="CompetitiveAnalysis" id="CompetitiveAnalysis">
+                                        <h2 class="sub-heading">Competitive Analysis</h2>
+                                        <p>Competitive analysis is like taking a good look at what other companies are
+                                            doing. We study our competitors to understand their strengths, weaknesses,
+                                            and the things they do differently. This helps us see where we stand in the
+                                            market and find opportunities to make our product even better.
+                                        </p>
+                                        <table id="competitivetable">
+                                            <tr>
+                                                <th>Company</th>
+                                                <th>Strengths</th>
+                                                <th>Weaknesses</th>
+                                                <th>Challenges Identified</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/bdj/linkdin.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Comprehensive functionality including lead management,
+                                                            listing, legal validation, deal management, and payment/cash
+                                                            collection.</li>
+                                                        <li>Established presence in the market.</li>
+                                                        <li>Despite high monthly bills, it offers a wide range of
+                                                            features.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>High monthly billing, making it less cost-effective for
+                                                            Bproperty.</li>
+                                                        <li>Subpar user experience with UX issues, potentially leading
+                                                            to lower productivity.</li>
+                                                    </ul>
+                                                </td>
+                                                <td rowspan="4">
+                                                    <ol>
+                                                        <li>Integration Complexity: </li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li>Integrating multiple platforms used
+                                                            by Bproperty employees into a single solution may pose
+                                                            technical challenges.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="2">
+                                                        <li>User Adoption:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li> Convincing Bproperty employees to transition
+                                                            from existing platforms to Expora may face resistance due to
+                                                            familiarity with current tools.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="3">
+                                                        <li>UX Enhancement:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li> Improving user experience across all
+                                                            functionalities of Expora to ensure seamless adoption and
+                                                            efficient workflow.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="4">
+                                                        <li>Cost Considerations:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li>Demonstrating the cost-effectiveness of
+                                                            Expora compared to competitors like Propforce to justify the
+                                                            transition to Bproperty management.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="5">
+                                                        <li>Feature Parity:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li> Ensuring Expora offers all essential
+                                                            features required by Bproperty employees, eliminating the
+                                                            need for using multiple platforms simultaneously.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/bdj/indeed.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specializes in lead generation and approval, providing a
+                                                            focused solution for this aspect of the process.
+                                                        </li>
+                                                        <li>Likely offers efficient lead management features tailored to
+                                                            Bproperty's needs.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Limited functionality, focusing primarily on lead generation
+                                                            and approval.</li>
+                                                        <li>Lack of comprehensive features for other property management
+                                                            operations.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/bdj/file-icon.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specializes in loan management and interior solutions,
+                                                            potentially providing robust features in these areas.</li>
+                                                        <li>Offers specialized functionality, which may be valuable for
+                                                            users with specific needs.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specialized in loan management and interior solutions,
+                                                            lacking features for other property management tasks.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/Tricorder.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Facilitates data collection through a mobile app, allowing
+                                                            for on-the-go information gathering.</li>
+                                                        <li>Despite potential UX and branding issues, its mobile
+                                                            functionality may appeal to users needing mobility.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Poor user experience with a mobile app interface that lacks
+                                                            consistency with Bproperty's brand.</li>
+                                                        <li>Limited functionality, primarily used for data collection
+                                                            without integration with other property management tasks.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/CP.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specializes in property verification and listing, providing
+                                                            essential features for this aspect of the property
+                                                            management process.</li>
+                                                        <li>Likely offers reliable functionality for property listing
+                                                            tasks.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Limited features, primarily focused on property verification
+                                                            and listing without support for other operations.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="userInterview" id="UnderstandingExistingSystem">
+                                        <h2 class="sub-heading">Understanding Existing System</h2>
+                                        <p>I began by analyzing Bproperty's current workflow, from property listing and
+                                            lead management to task and team management.<span
+                                                class="text-yel">Understanding their existing
+                                                processes helped identify pain points that Expora could address</span>
+                                            more
+                                            effectively. By pinpointing these pain points, I could tailor Expora to
+                                            offer a superior solution and enhance efficiency across the board.</p>
+                                        <div class="row row-cols-1 row-cols-md-2 g-2 my-4">
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-01.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 1">
+                                                    <img src="images/works/brpo/ues-01.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-02.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 2">
+                                                    <img src="images/works/brpo/ues-02.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-03.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 3">
+                                                    <img src="images/works/brpo/ues-03.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-04.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 4">
+                                                    <img src="images/works/brpo/ues-04.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="my-4 d-flex">
+                                            <div class="col">
+                                                <div class="option op-01 h-100">
+                                                    Inventory Management Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-02 h-100">
+                                                    Marketing Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-03 h-100">
+                                                    Customer Service Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-04 h-100">
+                                                    Sales Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-05 h-100">
+                                                    Sales Pipeline Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-06 h-100">
+                                                    Sales >> Aftersales Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-07 h-100">
+                                                    SPA Pipeline Activity
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="affinityMapping" id="UserPersona">
+                                        <h2 class="sub-heading">User Persona</h2>
+                                    </div>
+                                    <p>Our user personas were crafted after discussions with key stakeholders including
+                                        the <span class="text-yel">Legal Manager, Mortgage Manager, Director, and
+                                            Relationship Manager.</span> Each
+                                        persona represents a distinct role within the organization, providing valuable
+                                        insights into their specific needs, goals, and pain points. By understanding
+                                        their perspectives, we ensured Expora would cater to the diverse requirements of
+                                        our users.</p>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section id="Design">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Design</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="designIdeation" id="DesignIdeation">
+                                        <h2 class="sub-heading">Design Ideation</h2>
+                                        <p>Design ideation is the exciting phase where <span class="text-yel">creativity
+                                                takes center</span> stage in
+                                            crafting the user experience for the Online Test product. It involves
+                                            collaborative brainstorming sessions where the <span class="text-yel">design
+                                                team explores diverse
+                                                concepts and solutions.</span> From doodles on a whiteboard to digital
+                                            sketches,
+                                            ideation sparks innovation.</p>
+                                        <p>Simply I tried to make the <span class="text-yel">visual design according to
+                                                bdjobs design pattern</span>
+                                            and make the experience <span class="text-yel">very easy to use and
+                                                straight-forward.</span></p>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="sketchesWireframes" id="SketchesWireframes">
+                                        <h2 class="sub-heading">Sketches & Wireframes</h2>
+                                        <p>In the inception phase of crafting the Online Test product, the <span
+                                                class="text-yel">dynamic
+                                                collaboration between the product team and designers takes shape through
+                                                sketching and wireframing.</span> The process begins with free-flowing
+                                            sketches,
+                                            capturing raw ideas and layout possibilities. These sketches, guided by the
+                                            Product Requirement Document (PRD), then evolve into structured wireframes.
+                                            Wireframes act as the skeletal framework, meticulously outlining the
+                                            product's structure and functionality. This <span class="text-yel">planning
+                                                ensures a solid
+                                                foundation before delving into the design</span> details, setting the
+                                            stage for a
+                                            user-centric and visually compelling Online Test platform.</p>
+                                        <div class="sketch-img">
+                                            <img src="images/works/bdj/sketch-01.png" alt="" class="img-fluid">
+                                            <img src="images/works/bdj/sketch-02.jpeg" alt="" class="img-fluid my-2">
+                                            <img src="images/works/bdj/sketch-03.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="designGuidelines" id="DesignGuidelines">
+                                        <h2 class="sub-heading">Design Guidelines</h2>
+                                        <p>Figma Style Guide: To speed up the development process, <span
+                                                class="text-yel">I created a design
+                                                system using Figma for Bdjobs.</span> This design system helped to
+                                            maintain
+                                            consistency and structure in the design by establishing a clear hierarchy
+                                            and rhythm. Additionally, by creating reusable components, it also helped to
+                                            expedite the work of the front-end team.</p>
+                                        <div class="row">
+                                            <div class="col-lg-4 pan-image p-2">
+                                                <a href="images/works/bdj/design-guideline-02.png"
+                                                    data-fancybox="gallery" data-caption="Caption Images 1">
+                                                    <img src="images/works/bdj/design-guideline-02.png"
+                                                        alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 pan-image p-2">
+                                                <a href="images/works/bdj/design-guideline-01.png"
+                                                    data-fancybox="gallery" data-caption="Caption Images 1">
+                                                    <img src="images/works/bdj/design-guideline-01.png"
+                                                        alt="Image Gallery">
+                                                </a>
+                                                <a class="mt-2" href="images/works/bdj/design-guideline-04.png"
+                                                    data-fancybox="gallery" data-caption="Caption Images 1">
+                                                    <img src="images/works/bdj/design-guideline-04.png"
+                                                        alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4 pan-image p-2">
+                                                <a href="images/works/bdj/design-guideline-03.png"
+                                                    data-fancybox="gallery" data-caption="Caption Images 1">
+                                                    <img src="images/works/bdj/design-guideline-03.png"
+                                                        alt="Image Gallery">
+                                                </a>
+                                                <a href="images/works/bdj/design-guideline-05.png"
+                                                    data-fancybox="gallery" data-caption="Caption Images 1">
+                                                    <img src="images/works/bdj/design-guideline-05.png"
+                                                        alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="accessibility" id="Accessibility">
+                                        <h2 class="sub-heading">Accessibility</h2>
+                                        <div class="row">
+                                            <div class="col-lg-9">
+                                                <p>Accessibility ensures that everyone, regardless of disabilities or
+                                                    impairments, can access and use digital products, services, or
+                                                    environments. It involves designing and developing with inclusivity
+                                                    in mind, considering factors like <span class="text-yel">screen
+                                                        readers, keyboard
+                                                        navigation, color contrast, and alternative text for
+                                                        images.</span> By
+                                                    prioritizing accessibility, we create experiences that are usable by
+                                                    all, promoting equality, diversity, and user satisfaction.</p>
+
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img src="images/works/bdj/accessibility.png" class="w-100 p-2" alt="">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <p>Bdjobs website is designed to meet <span class="text-yel">AA
+                                                        Accessibility Standards</span> to
+                                                    ensure that a large number of users can access it. Additionally,
+                                                    responsive design is an important aspect of the bdjobs website's
+                                                    design.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="accessibility" id="HighFidelityDesign">
+                                        <h2 class="sub-heading">High Fidelity Design </h2>
+                                        <p class="">High fidelity design refers to the <span class="text-yel">detailed,
+                                                polished
+                                                version of a user
+                                                interface or product design.</span> It incorporates precise visual
+                                            elements, such
+                                            as colors, typography, imagery, and interactive components, to closely
+                                            resemble the final product. High fidelity designs are used for testing and
+                                            validation purposes, providing a realistic representation of the user
+                                            experience before development.</p>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+
+                                                <h6 class="text-yel my-2">Jobseeker Panel</h6>
+                                                <img src="images/works/bdj/devicemanager.jpeg" class="img-fluid" alt="">
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/image-1.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/image-1.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content p-4">
+                                                            <p class="job-text">After
+                                                                invitation, user will get a
+                                                                button to enter
+                                                                the exam
+                                                                room</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/image-2.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/image-2.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content p-4">
+                                                            <p class="job-text">users need to share his location. So
+                                                                that employee can track the location of the right
+                                                                candidate</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/image-3.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/image-3.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                            <!-- <img src="images/works/bdj/image-3.jpg" alt=""> -->
+                                                        </div>
+                                                        <div class="content p-4">
+                                                            <p class="job-text">MCQ question paper</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/image-4.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/image-4.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content p-4">
+                                                            <p class="job-text">Descriptive questions exam. Here ar all
+                                                                the question list</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+
+                                                <h6 class="text-yel my-2">Employer panel</h6>
+                                                <img src="images/works/bdj/employee-panel-01.jpeg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+
+                                            <div class="col-lg-12 mt-4">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-02.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-02.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-03.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-03.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-04.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-04.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-05.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-05.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-06.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-06.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-07.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-07.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ico-img">
+                                                            <a href="images/works/bdj/employee-panel-08.jpg"
+                                                                data-fancybox="gallery" data-caption="Caption Images 1">
+                                                                <img src="images/works/bdj/employee-panel-08.jpg"
+                                                                    alt="Image Gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="accessibility" id="UserFeedbackRevised">
+                                        <h2 class="sub-heading">User Feedback & Revised</h2>
+                                        <p class="">After the successful release of the Online Test platform, a new
+                                            demand emerged from our customers,<span class="text-yel">the employers: they
+                                                wanted
+                                                to observe the
+                                                tests live.</span> Their requirement was to view participant locations
+                                            and their
+                                            scores, especially for multiple-choice question (MCQ) exams. This feature
+                                            allowed employers to efficiently track ideal candidates in real-time. To
+                                            meet this need, we developed a dedicated dashboard displaying comprehensive
+                                            candidate information and delivering instant test results.</p>
+                                        <img src=" images/works/bdj/review-feedback.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section id="EvaluationIterations">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Evaluation & Iterations</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="userTestingProcess" id="UserTestingProcess">
+                                        <h2 class="sub-heading">User Testing Process</h2>
+                                        <p>By actively <span class="text-yel">involving the QC team and product analysts
+                                                in the user testing
+                                                process,</span> we ensure that the Online Test product not only meets
+                                            technical
+                                            standards but also aligns seamlessly with user expectations, creating a
+                                            reliable and user-centric assessment platform.</p>
+                                        <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>1. Test Planning:</p>
+                                                    <ul>
+                                                        <li>Collaborate with product analysts to outline comprehensive
+                                                            test plans, focusing on key functionalities and user
+                                                            interactions within the Online Test platform.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>2. Test Execution:</p>
+                                                    <ul>
+                                                        <li>QC professionals rigorously execute the test plans,
+                                                            navigating through the product to identify any
+                                                            discrepancies, glitches, or areas of improvement.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>3. User Scenario Replication:</p>
+                                                    <ul>
+                                                        <li>Simulate real-world scenarios to replicate user
+                                                            interactions, ensuring that the Online Test product performs
+                                                            seamlessly under various usage conditions.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>4. Usability Assessment:</p>
+                                                    <ul>
+                                                        <li>Assess the product's user-friendliness, seeking feedback on
+                                                            navigation, clarity of instructions, and overall ease of use
+                                                            from the user perspective.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>5. Bug Identification and Tracking:</p>
+                                                    <ul>
+                                                        <li>QC teams meticulously identify and document any bugs or
+                                                            issues discovered during testing, collaborating closely with
+                                                            development teams to address and resolve them promptly.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>6. Performance Evaluation:</p>
+                                                    <ul>
+                                                        <li>Evaluate the performance of the Online Test product under
+                                                            different load conditions, ensuring optimal responsiveness
+                                                            and stability.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>7. Feedback Integration:</p>
+                                                    <ul>
+                                                        <li>Leverage insights from product analysts and real users to
+                                                            refine the product, continuously iterating and enhancing
+                                                            features based on user feedback.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>8. Comprehensive Reporting:</p>
+                                                    <ul>
+                                                        <li>Provide detailed reports summarizing the testing process,
+                                                            including identified issues, resolved bugs, and
+                                                            recommendations for further improvement.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="ueasuringSuccess" id="MeasuringSuccess">
+                                        <h2 class="sub-heading">Measuring Success</h2>
+                                        <p>To measure the success of the Online Test product, we employ a multifaceted
+                                            measurement strategy encompassing various key performance indicators (KPIs)
+                                            and user-centric benchmarks. Our approach involves:</p>
+                                        <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>1. User Satisfaction Surveys:</p>
+                                                    <ul>
+                                                        <li>Regularly conduct user satisfaction surveys to gather direct
+                                                            feedback on the Online Test product's usability, features,
+                                                            and overall experience. Quantify satisfaction levels through
+                                                            a numerical rating system.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>2. Completion Rates:</p>
+                                                    <ul>
+                                                        <li>Analyze the percentage of completed assessments relative to
+                                                            initiated ones. Higher completion rates signify user
+                                                            engagement and a seamless assessment experience.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>3. Time-to-Hire Reduction:</p>
+                                                    <ul>
+                                                        <li>Measure the average time taken from the initiation of the
+                                                            recruitment process to the final hiring decision. A
+                                                            reduction in time-to-hire demonstrates increased efficiency
+                                                            facilitated by the Online Test product.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>4. Candidate Success Metrics:</p>
+                                                    <ul>
+                                                        <li>Evaluate the success rates of candidates who underwent
+                                                            online assessments. Track their progress within the
+                                                            organization, linking assessment performance to on-the-job
+                                                            success.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>5. Error Rates and Bug Reports:</p>
+                                                    <ul>
+                                                        <li>Monitor the frequency of errors and bug reports identified
+                                                            during QC testing and user feedback. A decrease in error
+                                                            rates reflects the product's stability and reliability.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>6. Cost Savings Analysis:</p>
+                                                    <ul>
+                                                        <li>Conduct a cost-benefit analysis by comparing the expenses
+                                                            associated with the Online Test product implementation
+                                                            against the savings achieved through streamlined recruitment
+                                                            processes and reduced time-to-hire.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>7. Integration Success:</p>
+                                                    <ul>
+                                                        <li>Assess the seamless integration of the Online Test product
+                                                            with existing recruitment and HR systems. A high success
+                                                            rate indicates compatibility and efficient collaboration.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>8. Diversity and Inclusion Impact:</p>
+                                                    <ul>
+                                                        <li>Track changes in the diversity and inclusion landscape by
+                                                            examining the demographic makeup of successfully hired
+                                                            candidates. An increase in diverse hires aligns with
+                                                            organizational goals.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>9. Security and Compliance Adherence:</p>
+                                                    <ul>
+                                                        <li>Regularly audit the security measures in place and assess
+                                                            compliance with data protection standards. High adherence
+                                                            indicates the robustness of the product in safeguarding
+                                                            sensitive information.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>10. User Testing Feedback Incorporation:</p>
+                                                    <ul>
+                                                        <li>Evaluate the effectiveness of incorporating user testing
+                                                            feedback into product updates. A high implementation rate
+                                                            demonstrates agility in addressing user needs and concerns.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12 design">
+                                    <div class="resultsMetrics" id="ResultsMetrics">
+                                        <h2 class="sub-heading">Results and Metrics</h2>
+                                        <p class="text-yel">Results and Metrics for the Online Test Product:</p>
+                                        <div class="data-contain">
+                                            <div class="option-data">
+                                                <p>1. Reduction in Recruitment Time:</p>
+                                                <ul>
+                                                    <li>Achieved a remarkable <span class="text-yel">25%
+                                                            reduction</span> in the average time
+                                                        taken from candidate assessment to final selection.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>2. Cost Savings:</p>
+                                                <ul>
+                                                    <li>Realized substantial cost savings of <span
+                                                            class="text-yel">$50,000 annually,</span> attributed to
+                                                        streamlined processes and resource optimization.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>3. Accuracy in Candidate Assessment:</p>
+                                                <ul>
+                                                    <li>Demonstrated a <span class="text-yel">20% increase in candidate
+                                                            assessments</span> aligning with job requirements, leading
+                                                        to more successful hires.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>4. Improved Remote Hiring Capabilities:</p>
+                                                <ul>
+                                                    <li>Expanded the reach by <span class="text-yel">30%,
+                                                            engaging</span> with a broader pool of
+                                                        candidates in diverse locations, resulting in 15% more
+                                                        successful remote placements.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>5. User Engagement and Satisfaction:</p>
+                                                <ul>
+                                                    <li>Achieved an impressive <span class="text-yel">90% user
+                                                            satisfaction rate</span> based on user
+                                                        feedback, surveys, and ratings.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>6. Integration Success:</p>
+                                                <ul>
+                                                    <li>Successfully integrated with <span class="text-yel">95% of
+                                                            existing recruitment</span> and HR
+                                                        systems, minimizing disruptions and ensuring smooth
+                                                        collaboration.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>7. Security and Compliance Measures:</p>
+                                                <ul>
+                                                    <li>Maintained a robust security posture with a <span
+                                                            class="text-yel">99.5% compliance
+                                                            rate,</span> ensuring the protection of sensitive candidate
+                                                        information.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>8. Scalability Metrics:</p>
+                                                <ul>
+                                                    <li>Demonstrated outstanding scalability, handling a <span
+                                                            class="text-yel">50% increase in
+                                                            user loads</span> during peak recruitment periods without
+                                                        compromising
+                                                        performance.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>9. Enhanced Diversity and Inclusion:</p>
+                                                <ul>
+                                                    <li>Contributed to a <span class="text-yel">15% increase in
+                                                            diversity hires,</span> fostering a
+                                                        more inclusive recruitment process.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-data">
+                                                <p>10. Feedback Implementation:</p>
+                                                <ul>
+                                                    <li>Implemented <span class="text-yel">80% of user-suggested
+                                                            improvements,</span> showcasing a
+                                                        responsive and user-centric approach to product development.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p>These quantifiable results and metrics provide a concrete overview of the
+                                                tangible benefits and success achieved by the Online Test product,
+                                                substantiating its impact on recruitment efficiency, cost-effectiveness,
+                                                and overall user satisfaction.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="feedbackDesignIterations" id="FeedbackDesignIterations">
+                                        <h2 class="sub-heading">Feedback & Design Iterations </h2>
+                                        <p>Feedback & design iteration plays a pivotal role in refining and optimizing
+                                            the user experience. This continuous improvement cycle is instrumental in
+                                            ensuring that the product aligns precisely with user needs and industry
+                                            standards.</p>
+                                        <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>1. Initial Design Implementation:</p>
+                                                    <ul>
+                                                        <li>Begin with the implementation of the initial design based on
+                                                            the wireframes and user requirements outlined in the Product
+                                                            Requirement Document (PRD).</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>2. User Testing and Feedback Collection:</p>
+                                                    <ul>
+                                                        <li>Conduct user testing sessions to gather valuable feedback on
+                                                            the initial design. Solicit input on usability, clarity of
+                                                            instructions, and overall satisfaction with the assessment
+                                                            experience.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>3. Analysis of User Feedback:</p>
+                                                    <ul>
+                                                        <li>Analyze the collected user feedback, identifying areas for
+                                                            improvement, potential pain points, and aspects that
+                                                            resonate positively with users.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>4. Prioritization of Design Enhancements:</p>
+                                                    <ul>
+                                                        <li>Prioritize design enhancements based on the severity and
+                                                            frequency of user feedback. Focus on addressing critical
+                                                            issues and enhancing features that significantly impact the
+                                                            user journey.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>5. A/B Testing for Key Elements:</p>
+                                                    <ul>
+                                                        <li>Implement A/B testing for specific design elements, such as
+                                                            question formats or navigation paths. This data-driven
+                                                            approach helps assess the performance and user preference
+                                                            for different design variations.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>6. Documentation of Design Changes:</p>
+                                                    <ul>
+                                                        <li>Maintain comprehensive documentation detailing each design
+                                                            iteration, including the rationale behind changes, user
+                                                            feedback incorporated, and the impact observed during
+                                                            testing.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option h-100">
+                                                    <p>7. Version Release and Monitoring:</p>
+                                                    <ul>
+                                                        <li>Release updated versions of the Online Test product, closely
+                                                            monitoring user interactions and system performance
+                                                            post-iteration. Gather post-release feedback to identify any
+                                                            unforeseen issues and further areas for improvement.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="TeamFeedback" class="my-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Evaluation & Iterations</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div id="carouselExampleInterval" class="carousel slide my-4"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <div class="card testimonial p-4 h-100">
+                                                    <div class="card-img">
+                                                        <img src="images/works/bdj/me.png" class="" alt="...">
+                                                    </div>
+                                                    <div class="body">
+                                                        <h5>Ahmed khan Junayed</h5>
+                                                        <p>Product Analyst @ Ami Probashi | Product
+                                                            Manager | Product Designer | SaaS | Job Portal</p>
+                                                        <p><i class="fa fa-eye"></i> All Linkedin members</p>
+                                                        <p class="mt-4">I have had the pleasure of working with Arafat
+                                                            on several
+                                                            projects at Bdjobs. He is a creative and tech-savvy UI/UX
+                                                            designer with interaction skills on different levels, from
+                                                            product-specific to strategic planning. He is fully aware of
+                                                            the market trends and is a true professional who always
+                                                            follows through on his commitments. He works diligently to
+                                                            ensure that the solution provides the highest possible
+                                                            value. In the future, I would not hesitate to suggest Arafat
+                                                            for the UI/UX industry.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <div class="card testimonial p-4 h-100">
+                                                    <div class="card-img">
+                                                        <img src="images/works/bdj/me.png" class="" alt="...">
+                                                    </div>
+                                                    <div class="body">
+                                                        <h5>Jafor Sadik Tutul</h5>
+                                                        <p>Product Analyst @ Ami Probashi | Product
+                                                            Manager | Product Designer | SaaS | Job Portal</p>
+                                                        <p><i class="fa fa-eye"></i> All Linkedin members</p>
+                                                        <p class="mt-4">I have had the pleasure of working with Arafat
+                                                            on several
+                                                            projects at Bdjobs. He is a creative and tech-savvy UI/UX
+                                                            designer with interaction skills on different levels, from
+                                                            product-specific to strategic planning. He is fully aware of
+                                                            the market trends and is a true professional who always
+                                                            follows through on his commitments. He works diligently to
+                                                            ensure that the solution provides the highest possible
+                                                            value. In the future, I would not hesitate to suggest Arafat
+                                                            for the UI/UX industry.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <div class="card testimonial p-4 h-100">
+                                                    <div class="card-img">
+                                                        <img src="images/works/bdj/me.png" class="" alt="...">
+                                                    </div>
+                                                    <div class="body">
+                                                        <h5>Mohammed Shahjalal</h5>
+                                                        <p>Product Analyst @ Ami Probashi | Product
+                                                            Manager | Product Designer | SaaS | Job Portal</p>
+                                                        <p><i class="fa fa-eye"></i> All Linkedin members</p>
+                                                        <p class="mt-4">I have had the pleasure of working with Arafat
+                                                            on several
+                                                            projects at Bdjobs. He is a creative and tech-savvy UI/UX
+                                                            designer with interaction skills on different levels, from
+                                                            product-specific to strategic planning. He is fully aware of
+                                                            the market trends and is a true professional who always
+                                                            follows through on his commitments. He works diligently to
+                                                            ensure that the solution provides the highest possible
+                                                            value. In the future, I would not hesitate to suggest Arafat
+                                                            for the UI/UX industry.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-action">
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
                 </div>
             </div>
         </div>
@@ -113,6 +1507,7 @@
 
     <!-- scripts -->
     <script src="js/jquery-3.6.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -121,6 +1516,113 @@
         const date = new Date();
         let year = date.getFullYear();
         document.getElementById("copyDate").innerHTML = year;
+
+    </script>
+    <script>
+        var toc = $('.toc');
+        var tocPath = $('.toc-marker path');
+        var tocItems;
+
+        var TOP_MARGIN = 0.1,
+            BOTTOM_MARGIN = 0.2;
+
+        var pathLength;
+
+        var lastPathStart,
+            lastPathEnd;
+
+        $(window).on('resize', drawPath);
+        $(window).on('scroll', sync);
+
+        drawPath();
+
+        function drawPath() {
+            tocItems = $('.toc li');
+
+            tocItems = tocItems.map(function (index, item) {
+                var anchor = $(item).find('a');
+                var target = $('#' + anchor.attr('href').slice(1));
+
+                return {
+                    listItem: item,
+                    anchor: anchor,
+                    target: target
+                };
+            });
+
+            tocItems = tocItems.filter(function (index, item) {
+                return !!item.target.length;
+            });
+
+            var path = [];
+            var pathIndent;
+
+            tocItems.each(function (i, item) {
+                var x = item.anchor.position().left - 5,
+                    y = item.anchor.position().top,
+                    height = item.anchor.outerHeight();
+
+                if (i === 0) {
+                    path.push('M', x, y, 'L', x, y + height);
+                    item.pathStart = 0;
+                } else {
+                    if (pathIndent !== x) path.push('L', pathIndent, y);
+
+                    path.push('L', x, y);
+
+                    tocPath.attr('d', path.join(' '));
+                    item.pathStart = tocPath[0].getTotalLength() || 0;
+
+                    path.push('L', x, y + height);
+                }
+
+                pathIndent = x;
+
+                tocPath.attr('d', path.join(' '));
+                item.pathEnd = tocPath[0].getTotalLength();
+            });
+
+            pathLength = tocPath[0].getTotalLength();
+
+            sync();
+        }
+
+        function sync() {
+            var windowHeight = $(window).height();
+
+            var pathStart = pathLength,
+                pathEnd = 0;
+
+            var visibleItems = 0;
+
+            tocItems.each(function (index, item) {
+                var targetBounds = item.target[0].getBoundingClientRect();
+
+                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+                    pathStart = Math.min(item.pathStart, pathStart);
+                    pathEnd = Math.max(item.pathEnd, pathEnd);
+
+                    visibleItems += 1;
+
+                    $(item.listItem).addClass('visible');
+                } else {
+                    $(item.listItem).removeClass('visible');
+                }
+            });
+
+            if (visibleItems > 0 && pathStart < pathEnd) {
+                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
+                    tocPath.attr('stroke-dashoffset', '1');
+                    tocPath.attr('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+                    tocPath.attr('opacity', 1);
+                }
+            } else {
+                tocPath.attr('opacity', 0);
+            }
+
+            lastPathStart = pathStart;
+            lastPathEnd = pathEnd;
+        }
 
     </script>
 </body>
