@@ -580,6 +580,21 @@
     .card .card-img {
         text-align: center;
     }
+
+    #UnderstandingExistingSystem .d-flex {
+        flex-direction: column;
+        gap: 6px;
+    }
+    #UnderstandingExistingSystem .option {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #carouselExampleFade table td {
+        padding: 0px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
