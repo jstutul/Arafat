@@ -9,6 +9,7 @@
 }
 .row .single-work {
     height: 460px;
+    width: 445px;
     border: 1px solid #fff;
     border-radius: 11px;
     overflow: hidden;
@@ -78,6 +79,7 @@
     font-weight: 700;
     line-height: 162.523%; /* 45.506px */
 }
+
 .bprotfolio-gallary .card img {
     /* width: 310px; */
     height: 239px;
@@ -102,6 +104,25 @@
     .carousel {
         position: relative;
         padding-bottom: 60px;
+    }
+    .work-container {
+        width: 100%;
+    }
+    .row .single-work {
+        width: auto;
+    }
+    main .heading-title {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .heading-section {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .heading-section h2,
+    .heading-section .second-title {
+        font-size: 20px;
+        line-height: 1.5;
     }
 }
 @media (min-width: 992px) {
