@@ -396,6 +396,33 @@
     letter-spacing: -0.011em;
     text-align: left;
 }
+.bg-design {
+    position: relative; /* Ensures that the gradient overlay is positioned relative to the div */
+    background-image: url(../images/works/brpo/design-bg.png);
+    background-size: cover;
+    height: 284px;
+}
+
+.bg-design::after {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        178.89deg,
+        #000000 0.95%,
+        rgba(0, 0, 0, 0) 123.76%
+    );
+    z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+.bg-design .d-title {
+    position: absolute;
+    left: 324px;
+    top: 130px;
+    z-index: 3;
+}
 
 .designIdeation p,
 .sketchesWireframes p,
@@ -410,7 +437,7 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: justify;
 }
 .job-text {
     color: #333333 !important;
@@ -594,6 +621,15 @@
     #carouselExampleFade table td {
         padding: 0px;
         text-align: center;
+    }
+    .bg-design {
+        height: auto;
+    }
+    .bg-design .d-title {
+        left: 40%;
+        top: 40px;
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 
