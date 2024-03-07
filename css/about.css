@@ -102,6 +102,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .left-sticky {
+        align-items: center;
+    }
 }
 .tab-content .tab-content .tab-pane .text-yel {
     color: var(--2, #fbff28);
