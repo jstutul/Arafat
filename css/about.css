@@ -20,12 +20,14 @@
 .about-heading .img-section img {
     width: 100%;
 }
-
-.nav .nav-item button.active {
+.content-section {
+    margin-top: 94px;
+}
+.nav .nav-item a.active {
     background-color: transparent;
     color: var(--darkmaincolor) !important;
 }
-.nav .nav-item button.active::after {
+.nav .nav-item a.active::after {
     content: "";
     height: 100%;
     position: absolute;
@@ -34,9 +36,9 @@
     border-radius: 5px 0 0 5px;
 }
 
-.nav .nav-item button {
+.nav .nav-item a {
     padding: 0;
-    color: var(--ffffff, #fff);
+    color: #fff;
     font-size: 22px;
     font-style: normal;
     font-weight: 700 !important;
@@ -46,54 +48,10 @@
 .about-section {
     margin-top: 94px;
 }
-
-.tab-custome {
-    display: flex;
-    align-items: start;
+.text-yel {
+    color: #fbff28 !important;
 }
-@media only screen and (max-width: 600px) {
-    .tab-custome {
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-    }
-    #pills-tab {
-        width: 100% !important;
-    }
-    #pills-tab li button {
-        width: 100% !important;
-        text-align: center;
-    }
-    .tab-content .tab-pane .text-yel {
-        font-size: 16px !important;
-    }
-    .tab-content .tab-pane p .res-icon {
-        display: block;
-    }
-    .tab-content .tab-pane p {
-        font-size: 16px !important;
-    }
-    .tab-content .tab-pane span img {
-        width: 20px;
-        height: 20px;
-    }
-    .tab-content .tab-pane .fiver {
-        margin: 0px 8px;
-    }
-
-    .tab-pane .exp-gpd {
-        font-size: 16px !important;
-    }
-    .tab-pane .exp-uiux {
-        font-size: 16px !important;
-    }
-
-    .tab-pane .icon {
-        width: 20px;
-        height: 20px;
-    }
-}
-.tab-content .tab-title {
+.tab-title {
     color: #fff;
     text-align: center;
     font-size: 38px;
@@ -102,8 +60,50 @@
     line-height: normal;
     padding: 10px 0px;
 }
+#experience,
+#learningcertification,
+#graphicdesign,
+#artpainting,
+#photography {
+    margin-top: 102px;
+    text-align: center;
+}
+#experience p {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%;
+}
+#learningcertification p,
+#graphicdesign p,
+#artpainting p,
+#photography p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+.res-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 
-.tab-content .tab-pane .text-yel {
+.left-sticky {
+    position: sticky;
+    top: 10%;
+}
+
+.content-scroll {
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+}
+.tab-content .tab-content .tab-pane .text-yel {
     color: var(--2, #fbff28);
     font-size: 16px;
     font-style: normal;
