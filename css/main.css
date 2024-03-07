@@ -4,10 +4,15 @@
 }
 
 /* my work  */
-.row .col a {
+.work-container {
+    display: flex;
+    column-gap: 70px;
+    row-gap: 68px;
+}
+.work-container .single-work a {
     text-decoration: none;
 }
-.row .single-work {
+.work-container .single-work {
     height: 460px;
     width: 445px;
     border: 1px solid #fff;
@@ -15,46 +20,45 @@
     overflow: hidden;
     background-color: var(--maincolor) !important;
 }
-.single-work .card-img {
+.single-work .content-img {
     background-size: cover;
     background-position: center;
     height: 280px;
 }
-.card-img img {
+.content-img img {
     padding-top: 102px;
     padding-bottom: 102px;
     padding-left: 48.86px;
     padding-right: 78.17px;
 }
-.single-work .card-body {
-    padding-left: 46px;
-    padding-right: 64px;
+.single-work .content-body {
+    margin-top: 23px;
+    padding-left: 40px;
+    padding-right: 0px;
 }
-.single-work .card-body h5 {
+.content-body .content-title {
     color: #fff;
-    font-family: Inter;
+
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 162.523%; /* 39.005px */
+    line-height: 39.005px;
 }
-.card-body .b-desg {
+.content-body .b-desg {
     color: #bababa;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 162.523%; /* 22.753px */
 }
-.card-body .b-desg img {
+.content-body .b-desg img {
     margin-right: 10px;
     border-radius: 5px;
     width: 26px;
     height: 26px;
 }
-.card-body .b-text {
+.content-body .b-text {
     color: #fff;
-    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +67,10 @@
 /* my work end  */
 
 /* protfolio */
-
+.img-icon {
+    width: 52px;
+    height: 52px;
+}
 .bprotfolio {
     margin-top: 70px;
 }
@@ -73,22 +80,46 @@
 .bprotfolio .p-title {
     color: #fff;
     text-align: center;
-    font-family: Inter;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 162.523%; /* 45.506px */
+    line-height: 45.5px;
 }
 
-.bprotfolio-gallary .card img {
-    /* width: 310px; */
-    height: 239px;
-    flex-shrink: 0;
+.bprotfolio-gallary {
+    width: 954px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bprotfolio-gallary .single-gallery {
+    width: 304px;
+    height: 237px;
+    overflow: hidden;
+}
+.bprotfolio-gallary .single-gallery img {
+    border-radius: 10px;
 }
 
+/* dribble portfolio */
+.dribble-portfolio {
+    width: 954px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dribble-portfolio .single-portfolio {
+    width: 302px;
+    height: 226px;
+}
+.dribble-portfolio .single-portfolio img {
+    border-radius: 10px;
+}
 .carousel-indicators [data-bs-target] {
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     border: 1px solid var(--dashcolor);
     background-color: var(--darkmaincolor);
@@ -108,8 +139,8 @@
     .work-container {
         width: 100%;
     }
-    .row .single-work {
-        width: auto;
+    .work-container .single-work {
+        width: 100%;
     }
     main .heading-title {
         font-size: 20px;
@@ -123,6 +154,28 @@
     .heading-section .second-title {
         font-size: 20px;
         line-height: 1.5;
+    }
+
+    .bprotfolio-gallary {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    .dribble-portfolio {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-item .single-portfolio {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 @media (min-width: 992px) {
