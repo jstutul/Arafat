@@ -212,6 +212,10 @@
     text-align: left;
 }
 
+#competitivetable tr td:first-child {
+    padding: 5px;
+}
+
 #competitivetable tr th {
     font-size: 16px;
     font-weight: 700;
@@ -522,17 +526,54 @@
     text-align: center;
     border-radius: 30px;
 }
-#carouselExampleInterval {
-    position: relative;
+#carouselExampleIndicators .carousel-inner {
+    width: 591px;
+    margin: 0 auto;
 }
-
-#carouselExampleInterval .carousel-control-prev {
-    left: 300px;
-    top: 280px;
+@media (max-width: 600px) {
+    .carousel-control-prev {
+        left: -5px;
+    }
+    .carousel-control-next {
+        right: -1px;
+    }
+    .carousel {
+        position: relative;
+        padding-bottom: 60px;
+    }
+    .carousel-item .single-portfolio {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #carouselExampleIndicators .carousel-inner {
+        width: 100%;
+    }
 }
-#carouselExampleInterval .carousel-control-next {
-    right: 300px;
-    top: 280px;
+@media (min-width: 992px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 0%;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 15%; */
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: 0.5;
+        transition: opacity 0.15s ease;
+        margin-bottom: 55px;
+    }
+    .carousel {
+        position: relative;
+        padding-bottom: 60px;
+    }
 }
 
 /* mobile device  */
