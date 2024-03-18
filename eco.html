@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arafat</title>
+
+    <meta name="title" content="Tutul">
+    <meta name="description" content="">
+
+    <!-- opengraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Tutul">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/image-zoom.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/eco.css" />
+    <style>
+        .toc {
+            left: 14rem;
+            top: 2em;
+            padding: 1em;
+            width: 16rem;
+            line-height: 0;
+            position: sticky;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul ul {
+                padding-left: 2em;
+            }
+
+            li a {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                display: inline-block;
+                color: #fff;
+                text-decoration: none;
+                transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+            }
+
+            li.visible>a {
+                color: #70e87c;
+                transform: translate(5px);
+            }
+
+            ul li ul li a {
+                font-size: 12px;
+            }
+        }
+
+        .toc-marker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+
+        .contents {
+            padding: 1em;
+            max-width: 800px;
+            font-size: 1.2em;
+
+            img {
+                max-width: 100%;
+            }
+
+            .code-block {
+                white-space: pre;
+                overflow: auto;
+                max-width: 100%;
+
+                code {
+                    display: block;
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                }
+            }
+
+            .code-inline {
+                background-color: #f9f9f9;
+                padding: 4px;
+            }
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border: 1px solid #0B5F8C
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            body {
+                font-size: 14px;
+            }
+
+        }
+    </style>
+    <style>
+        .sld .title h2 {
+            color: #0E6B4F;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .sld .img-container {
+            text-align: center;
+        }
+
+        .sld .img-container img {
+            border-radius: 50%;
+        }
+
+        .sld table .left {
+            color: var(--Grey-1, #A3A3A3);
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .sld table .right {
+            color: var(--Text, #3A3D5B);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 0px 10px;
+        }
+
+        .sld .abt-title {
+            color: var(--Text, #3A3D5B);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .sld .skills {
+            display: flex;
+            padding: 2.974px 8.923px;
+            align-items: center;
+            gap: 3.718px;
+        }
+
+        .skills .skill {
+            border-radius: 20.82px;
+            background: var(--Gray-6, #F2F2F2);
+            color: #000;
+            font-size: 12.641px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 2px 10px;
+        }
+
+        .sld .personality-text {
+            color: var(--Primary-2, #1D2254);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .sld p {
+            color: #3A3D5B !important;
+            font-size: 11.897px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .sld ul li {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!-- ============================
+    =            header            =
+    =============================-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Arafat</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ----------------------------------------- -->
+    <!--                  Content                  -->
+    <!-- ----------------------------------------- -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 topimage-crm">
+                    <img src="images/works/eco/headerimage-mi.jpeg" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="eco-title">
+                        Discover a Greener World with ECO: Explore, Learn, and Act. Your Guide to Environmental
+                        Education and Positive Action!
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 d-none d-sm-block">
+                    <nav class="toc">
+                        <ul>
+                            <li><a href="#Overview">Overview</a>
+                                <ul>
+                                    <li><a href="#Problem">Problem</a></li>
+                                    <li><a href="#Objectives">Objectives </a></li>
+                                    <li><a href="#Solution">Solution</a></li>
+                                    <li><a href="#TheGoal">The Goal</a></li>
+                                    <li><a href="#Workingprocess">Working process</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Research">Research</a>
+                                <ul>
+                                    <li><a href="#Scenario">Scenario</a></li>
+                                    <li><a href="#FoodCrisis">Food Crisis</a></li>
+                                    <li><a href="#WastePollutionCrisis">Waste Pollution Crisis</a></li>
+                                    <li><a href="#GlobalWarmingCrisis">Global Warming Crisis</a></li>
+                                    <li><a href="#FoodCrisisReport">Food Crisis Report</a></li>
+                                    <li><a href="#GlobalWarming">Global Warming</a></li>
+                                    <li><a href="#Awareness">Awareness</a></li>
+                                    <li><a href="#UserPersona">User Persona</a></li>
+                                    <li><a href="#EmpathyMap">Empathy Map</a></li>
+                                    <li><a href="#Sitemap">Sitemap</a></li>
+                                    <li><a href="#InformationArchitecture">Information Architecture</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#BrandGuide">Brand Guide</a>
+                                <ul>
+                                    <li><a href="#Typography">Typography</a></li>
+                                    <li><a href="#Colors">Colors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#HighFidelityDesign">High Fidelity Design</a>
+                                <ul>
+                                    <li><a href="#Dashboard">Dashboard</a></li>
+                                    <li><a href="#Orders">Orders</a></li>
+                                    <li><a href="#Products">Products</a></li>
+                                    <li><a href="#Customers">Customers</a></li>
+                                    <li><a href="#Analytics">Analytics</a></li>
+                                    <li><a href="#Marketing">Marketing</a></li>
+                                    <li><a href="#Integration">Integration </a></li>
+                                    <li><a href="#Communication">Communication</a></li>
+                                    <li><a href="#Setting">Setting</a></li>
+                                    <li><a href="#Profile">Profile</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#EvaluationIterations">My Progress</a>
+                                <ul>
+                                    <li><a href="#Challanges">Challanges</a></li>
+                                    <li><a href="#Learning">Learning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                                stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+                        </svg>
+                    </nav>
+                </div>
+                <div class="col-lg-9">
+                    <article class="contents">
+                        <section id="Overview">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Overview</div>
+                                    </div>
+                                    <p>"ECO," the mobile app with a mission, is your gateway to a sustainable future.
+                                        We're here to educate, empower, and transform individuals into eco-conscious
+                                        stewards of our planet. By tackling issues like food waste and littering, ECO
+                                        equips users with knowledge and engaging games to drive meaningful behavioral
+                                        change. Together, we're building a more environmentally responsible society,
+                                        while also ensuring that everyone gets the food they need. Welcome to ECO, where
+                                        education meets empowerment for a greener, more compassionate tomorrow.</p>
+                                    <p><span class="text-yel">VISION:</span> We aim to educate and empower individuals,
+                                        fostering the
+                                        growth of an eco-conscious society.</p>
+                                    <p><span class="text-yel">MISSION:</span>
+                                        Our mission is to instill behavioral change in individuals, guiding
+                                        them towards a sustainable future.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="problem" id="Problem">
+                                        <h2 class="sub-heading">Problem</h2>
+                                        <p>In our world today, we have a big problem with the environment. People waste
+                                            food and litter, and this is harming our planet and making some people go
+                                            hungry. We need to do something about this. That's where the "ECO" app comes
+                                            in. It wants to help by teaching and changing how people behave to make the
+                                            world better, kinder, and more sustainable.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="solution" id="Objectives">
+                                        <h2 class="sub-heading">Objectives</h2>
+                                        <p><span class="text-yel">Raise Awareness:</span> Increase public awareness of
+                                            environmental issues, with a
+                                            focus on food waste and littering, by providing educational resources and
+                                            information.</p>
+                                        <p><span class="text-yel">Educate and Inform: </span>Equip users with accessible
+                                            and engaging learning
+                                            materials that impart knowledge about the consequences of their actions on
+                                            the environment and society.</p>
+                                        <p><span class="text-yel">Promote Sustainable Behavior:</span> Encourage users
+                                            to adopt sustainable behaviors,
+                                            such as reducing food waste and proper waste disposal, through gamification
+                                            and interactive experiences.</p>
+                                        <p><span class="text-yel">Alleviate Hunger: </span> Contribute to reducing food
+                                            waste and food insecurity by
+                                            facilitating the redistribution of surplus food resources to those in need
+                                            through the app's features.
+                                        </p>
+                                        <p><span class="text-yel">Community Building:</span> Foster a community of
+                                            environmentally responsible
+                                            individuals who share their achievements and inspire others to make
+                                            eco-conscious choices.</p>
+                                        <p> <span class="text-yel">Quantifiable Impact: </span>Measure and track the
+                                            impact of the app on reducing food
+                                            waste, littering, and promoting tree planting through data collection and
+                                            analysis.</p>
+                                        <p><span>User Growth:</span> Expand the user base to reach a wider audience,
+                                            ensuring that
+                                            more people have access to the app's educational and gamified resources.</p>
+                                        <p><span class="text-yel">Continuous Improvement:</span> Continuously enhance
+                                            the app's features and content
+                                            based on user feedback and emerging environmental challenges.</p>
+                                        <p><span>Advocacy and Partnerships:</span> Collaborate with environmental
+                                            organizations and
+                                            advocate for policies that align with the app's mission and vision.</p>
+                                        <p><span class="text-yel">Global Reach:</span> Extend the reach of "ECO" beyond
+                                            local boundaries, making it a
+                                            global platform for environmental education and activism.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="solution" id="Solution">
+                                        <h2 class="sub-heading">Solution</h2>
+                                        <p>"ECO" offers a comprehensive solution to address the pressing environmental
+                                            issues of our time, including food waste and littering, by providing a
+                                            <span class="text-yel">multi-faceted platform that educates, empowers, and
+                                                drives behavioral
+                                                change.</span> Through a blend of accessible educational resources and
+                                            engaging
+                                            gamification, the app equips individuals with the knowledge and motivation
+                                            to make eco-conscious <span class="text-yel">choices, leading to a more
+                                                sustainable, responsible,
+                                                and compassionate society.</span> By connecting users with the means to
+                                            reduce food
+                                            waste, combat littering, and actively participate in tree planting, "ECO"
+                                            not only fosters environmental awareness but also actively contributes to
+                                            building a better world for all.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="TeamContribution" id="TheGoal">
+                                        <!-- <h2 class="sub-heading">The Goal</h2> -->
+                                        <img src="images/works/eco/thegoal.png" class="w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="TeamContribution" id="Workingprocess">
+                                        <h2 class="sub-heading my-4">Working process</h2>
+                                        <a href="images/works/eco/workingprocess.png" data-fancybox="working-process"
+                                            data-caption="Working Process">
+                                            <img src="images/works/eco/workingprocess.png" alt="Image Gallery">
+                                        </a>
+                                        <div class="working-p">
+                                            <a href="images/works/eco/wp-01.png" data-fancybox="working-process-details"
+                                                data-caption="Working Process">
+                                                <img src="images/works/eco/wp-01.png" alt="Image Gallery">
+                                            </a>
+                                            <a href="images/works/eco/wp-02.png" data-fancybox="working-process-details"
+                                                data-caption="Working Process">
+                                                <img src="images/works/eco/wp-02.png" alt="Image Gallery">
+                                            </a>
+                                            <a href="images/works/eco/wp-03.png" data-fancybox="working-process-details"
+                                                data-caption="Working Process">
+                                                <img src="images/works/eco/wp-03.png" alt="Image Gallery">
+                                            </a>
+                                            <a href="images/works/eco/wp-04.png" data-fancybox="working-process-details"
+                                                data-caption="Working Process">
+                                                <img src="images/works/eco/wp-04.png" alt="Image Gallery">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="Research">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Research</div>
+                                        <img src="images/works/eco/research.jpeg" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="solution" id="Scenario">
+                                        <h2 class="sub-heading">Scenario</h2>
+                                        <p>During the design of the ECO app, <span class="text-yel">I conducted in-depth
+                                                research to pinpoint
+                                                the real-world environmental issues that our</span> global community
+                                            faces. This
+                                            research was aimed at understanding the root causes of problems like food
+                                            waste, littering, and other environmental challenges. By identifying these
+                                            issues, we could tailor the app's features and content to effectively
+                                            address the most critical concerns and empower individuals to make a
+                                            positive impact on the environment.</p>
+                                        <a href="images/works/eco/scinario.png" data-fancybox="Scenario"
+                                            data-caption="Working Process">
+                                            <img src="images/works/eco/scinario.png" alt="Scenario Image" class="w-100">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="solution" id="FoodCrisis">
+                                        <h2 class="sub-heading">Food Crisis</h2>
+                                        <p>The global food crisis is a dire situation affecting <span
+                                                class="text-yel">approximately 9.2% of
+                                                the world's population, or nearly 700 million people,</span> who suffer
+                                            from
+                                            chronic hunger and food insecurity. This crisis is exacerbated by factors
+                                            such as climate change and conflicts, leading to insufficient access to
+                                            nutritious meals. Addressing this issue is crucial to ensure a better future
+                                            for those in need.</p>
+                                        <a href="images/works/eco/foodcrisis-mi.jpeg" data-fancybox="Waste-Population"
+                                            data-caption="Waste-Population">
+                                            <img src="images/works/eco/foodcrisis-mi.jpeg" class="w-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="affinityMapping" id="WastePollutionCrisis">
+                                    <h2 class="sub-heading">Waste Pollution Crisis:</h2>
+                                    <p>Our user personas were crafted after discussions with key stakeholders including
+                                        the <span class="text-yel">Legal Manager, Mortgage Manager, Director, and
+                                            Relationship Manager.</span> Each
+                                        persona represents a distinct role within the organization, providing valuable
+                                        insights into their specific needs, goals, and pain points. By understanding
+                                        their perspectives, we ensured Expora would cater to the diverse requirements of
+                                        our users.</p>
+                                    <div class="wp-row-1">
+                                        <a href="images/works/eco/wp-001.jpeg" data-fancybox="WastePollutionCrisis"
+                                            data-caption="Waste Pollution Crisis">
+                                            <img src="images/works/eco/wp-001.jpeg" class="w-100" alt="">
+                                        </a>
+                                        <a href="images/works/eco/wp-002.png" data-fancybox="WastePollutionCrisis"
+                                            data-caption="Waste Pollution Crisis">
+                                            <img src="images/works/eco/wp-002.png" class="w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="wp-row-1">
+                                        <a href="images/works/eco/wp-003.png" data-fancybox="WastePollutionCrisis"
+                                            data-caption="Waste Pollution Crisis">
+                                            <img src="images/works/eco/wp-003.png" class="w-100" alt="">
+                                        </a>
+                                        <a href="images/works/eco/wp-004.png" data-fancybox="WastePollutionCrisis"
+                                            data-caption="Waste Pollution Crisis">
+                                            <img src="images/works/eco/wp-004.png" class="w-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-4">
+                                <div class="affinityMapping" id="GlobalWarmingCrisis">
+                                    <h2 class="sub-heading">Global Warming Crisis</h2>
+                                    <p>The global warming <span class="text-yel">crisis involves a 1.2°C (2.2°F) rise in
+                                            Earth's average
+                                            temperature</span> due to greenhouse gas emissions. It leads to extreme
+                                        weather events
+                                        and rising sea levels, necessitating urgent global action to limit warming and
+                                        secure a sustainable future.</p>
+                                    <a href="images/works/eco/globalwarming.png" data-fancybox="Global-warning"
+                                        data-caption="Waste Pollution Crisis">
+                                        <img src="images/works/eco/globalwarming.png" alt="Global Warning"
+                                            class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-4">
+                                <div class="affinityMapping" id="FoodCrisisReport">
+                                    <h2 class="sub-heading">Food Crisis Report</h2>
+                                    <a href="images/works/eco/foodcrisisreport.png" data-fancybox="Food-Crisis-Report"
+                                        data-caption="Waste Pollution Crisis">
+                                        <img src="images/works/eco/foodcrisisreport.png" alt="Food Crisis Report"
+                                            class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-4">
+                                <div class="affinityMapping" id="FoodCrisisReport">
+                                    <h2 class="sub-heading">Plastic Pollution Crisis Report</h2>
+                                    <a href="images/works/eco/plasticpollutioncrisisreport.png"
+                                        data-fancybox="Food-Crisis-Report" data-caption="Plastic Pollution Crisis">
+                                        <img src="images/works/eco/plasticpollutioncrisisreport.png"
+                                            alt="Food Crisis Report" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-4">
+                                <div class="affinityMapping" id="GlobalWarming">
+                                    <h2 class="sub-heading">Global Warming</h2>
+                                    <a href="images/works/eco/plasticpollutioncrisisreport.png"
+                                        data-fancybox="Food-Crisis-Report" data-caption="Plastic Pollution Crisis">
+                                        <img src="images/works/eco/plasticpollutioncrisisreport.png"
+                                            alt="Food Crisis Report" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+
+                </div>
+                </section>
+
+                <section id="Design">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center bg-design">
+                                <img src="images/works/brpo/designbg.png" alt="">
+                                <div class="d-title">Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designIdeation" id="DesignIdeation">
+                                <h2 class="sub-heading">Design Ideation</h2>
+                                <p>Design ideation is a <span class="text-yel">collaborative process of
+                                        generating creative ideas
+                                        and
+                                        solutions to address specific design challenges or opportunities.</span>
+                                    It
+                                    involves brainstorming, sketching, and exploring various concepts to inspire
+                                    innovation and problem-solving. Through ideation sessions, teams can
+                                    generate a wide range of ideas and concepts, fostering creativity and
+                                    driving the design process forward.</p>
+                                <div class="design-ideation-img">
+                                    <img src="images/works/brpo/designideation.png" class="w-100"
+                                        alt="Design Ideation Image">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="sketchesWireframes" id="SketchesWireframes">
+                                <h2 class="sub-heading">Sketches & Wireframes</h2>
+                                <p>Sketches and wireframes are foundational tools used in the early stages of
+                                    the design process. Sketches are quick, hand-drawn representations of design
+                                    concepts, while wireframes are digital or paper-based outlines that <span
+                                        class="text-yel">define
+                                        the structure and layout of a product or interface.</span> </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="images/works/brpo/sketch-02.png" data-fancybox="sketchesWireframes"
+                                            data-caption="Sketches & Wireframes">
+                                            <img src="images/works/brpo/sketch-02.png" alt="Sketches & Wireframes 1">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a href="images/works/brpo/sketch-01.png" data-fancybox="sketchesWireframes"
+                                            data-caption="Sketches & Wireframes">
+                                            <img src="images/works/brpo/sketch-01.png" alt="Sketches & Wireframes 2">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="BrandGuidelines">
+                                <h2 class="sub-heading">Brand Guidelines</h2>
+                                <p>Brand guidelines are a set of rules and standards that define how a brand
+                                    should be represented visually across all touchpoints. They include
+                                    specifications for elements such as <spna class="text-yel">logos, colors,
+                                        typography, imagery, and
+                                        tone of voice.</spna> Brand guidelines ensure consistency and coherence
+                                    in brand
+                                    communication, helping to build brand recognition and trust among audiences.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <a href="images/works/brpo/brandguidelines.png" data-fancybox="DesignGuidelines"
+                                            data-caption="Design Guidelines">
+                                            <img src="images/works/brpo/brandguidelines.png" alt="Design Guidelines">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design">
+                            <div class="accessibility" id="HighFidelityDesign">
+                                <h2 class="sub-heading">High Fidelity Design </h2>
+                                <p class="">High fidelity design refers to the <span class="text-yel">detailed,
+                                        polished version of a
+                                        user interface or product design.</span> It incorporates precise visual
+                                    elements,
+                                    such as colors, typography, imagery, and interactive components, to closely
+                                    resemble the final product. High fidelity designs are used for testing and
+                                    validation purposes, providing a realistic representation of the user
+                                    experience before development.</p>
+                                <div class="higly-fidelity-design">
+                                    <div class="higly-image">
+                                        <img data-zoom-image src="images/works/brpo/HighFidelityDesign/image-01.png"
+                                            alt="High Fidelity Design 1">
+                                        <p class="text-center my-2">CRM UI</p>
+                                    </div>
+                                    <div class=" higly-image">
+                                        <img data-zoom-image src="images/works/brpo/HighFidelityDesign/image-02.png"
+                                            alt="High Fidelity Design 2">
+                                        <p class="text-center my-2">LEAD UI</p>
+                                    </div>
+                                </div>
+                                <div class=" higly-fidelity-design">
+                                    <div class="higly-image">
+                                        <img data-zoom-image src="images/works/brpo/HighFidelityDesign/image-03.png"
+                                            alt="High Fidelity Design 3">
+                                        <p class="text-center my-2">Valuation Web</p>
+                                    </div>
+                                    <div class="higly-image">
+
+                                        <img data-zoom-image src="images/works/brpo/HighFidelityDesign/image-04.png"
+                                            alt="High Fidelity Design 4">
+                                        <p class="text-center">Valuation App</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="FeaturesandSections">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <div class="d-title">Features and Sections</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="Authentications">
+                                <h2 class="auth-title">AUTHENTICATION</h2>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <img src="images/works/brpo/Features/Authentications.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="DealSummary">
+                                <h2 class="auth-title">Deal Summary</h2>
+                                <p>All deals in one place. The deal will separated by category/pipeline such as
+                                    SPA(sales and purchase agreement) Pipeline, Registration Pipeline. Users
+                                    able to create task on the particular deal and view all details of a deal.
+                                    Also show the Won/Lost deals. </p>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <img src="images/works/brpo/Features/DealSummary.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="Dashboard">
+                                <h2 class="auth-title">Dashboard</h2>
+                                <p>The Expora dashboard is where it all begins. Here, users get a quick overview
+                                    of all the features available. They can see deals across different
+                                    pipelines, track task logs, monitor task completion ratios, view cash
+                                    collection metrics, including service charges and total cash collected. </p>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <img src="images/works/brpo/Features/Dashboard.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="Leadsection">
+                                <h2 class="auth-title">Leadsection</h2>
+                                <p>Users can easily search for leads using the client's phone number. They can
+                                    also add new leads, which include comprehensive client information such as
+                                    lead type (Buyer/ Seller/ Rental/ Interior/ Legal/ Mortgage), location
+                                    details, lead specifics, amenities, and more.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <img src="images/works/brpo/Features/LeadSection.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="PropertyValuation">
+                                <h2 class="auth-title">Property Valuation</h2>
+                                <p>The property valuation provide a comprehensive overview of key factors
+                                    essential for accurate property assessment. Users can input apartment or
+                                    building features, legal status, and unit details. The platform offers cost
+                                    evaluation tools and allows users to upload property photos for visual
+                                    reference. Users can also access forecasting and comparative data on similar
+                                    properties sold or rented in the neighborhood, empowering informed
+                                    decision-making.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <img src="images/works/brpo/Features/Property.png" alt="">
+                                    </div>
+                                    <div class="col-lg-12 mb-4">
+                                        <img data-zoom-image src="images/works/brpo/Features/PropertyGroup.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="designGuidelines" id="PropertyValuationApp">
+                                <h2 class="auth-title">Property Valuation App</h2>
+                                <p>Bproperty's field employees require a mobile app to efficiently gather
+                                    property data from various locations. This app seamlessly integrates with
+                                    the Expora SaaS platform. Within the app, users can easily add new projects,
+                                    accessing a range of options including project details, features,
+                                    documentation, units, and pricing. The app also facilitates capturing
+                                    property images. Once all information is inputted, users can submit it for
+                                    review. Upon review by the Expora SaaS, the data can be approved or
+                                    rejected, completing the process efficiently.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 my-4">
+                                        <img src="images/works/brpo/Features/PValuationApp.png" alt="">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img data-zoom-image src="images/works/brpo/Features/sm1.png" alt="">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img data-zoom-image src="images/works/brpo/Features/sm2.png" alt="">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img data-zoom-image src="images/works/brpo/Features/sm3.png" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="EvaluationIterations">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <div class="d-title">Evaluation & Iterations</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 design">
+                            <div class="userTestingProcess" id="UserTestingProcess">
+                                <!-- <h2 class="sub-heading">User Testing Process</h2> -->
+                                <img data-zoom-image src="images/works/brpo/UserTestingProcess.svg"
+                                    alt="User Testing Process">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 design mt-4">
+                            <div class="ueasuringSuccess" id="MeasuringSuccess">
+                                <!-- <h2 class="sub-heading">Measuring Success</h2> -->
+                                <img data-zoom-image src="images/works/brpo/measuringsuccess.svg"
+                                    alt="Measuring Success">
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-12 design">
+                            <div class="results" id="Results">
+                                <!-- <h2 class="sub-heading">Results</h2> -->
+                                <img data-zoom-image src="images/works/brpo/result.svg" alt="Measuring Success">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="TeamFeedback" class="my-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <div class="d-title">Evaluation & Iterations</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div id="carouselExampleInterval" class="carousel slide my-4" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="images/works/brpo/feedback/bpropertysakib.png" alt="">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <img src="images/works/brpo/feedback/bpropertysakib.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="carousel-action">
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                </article>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!--============================
+	=            footer            =
+	=============================-->
+    <footer>
+        <section class="copyright">
+            <div class="left-side">
+                <div class="s-link">
+                    <a href="#" class="">
+                        <img class="img-fluid" src="/images/icons/s1.svg" alt="linkdin" />
+                    </a>
+                </div>
+                <div class="s-link">
+                    <a href="#" class="">
+                        <img class="img-fluid" src="/images/icons/s2.svg" alt="linkdin" />
+                    </a>
+                </div>
+            </div>
+            <div class="middle-side">
+                © <span id="copyDate">2024</span>
+            </div>
+            <div class="right-side">
+                <div class="s-link">
+                    <a href="#">
+                        <img src="/images/icons/up.svg" class="img-fluid" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/image-zoom.js"></script>
+
+    <script type="text/javascript">
+        //footer JS
+        const date = new Date();
+        let year = date.getFullYear();
+        document.getElementById("copyDate").innerHTML = year;
+
+    </script>
+    <script>
+        var toc = $('.toc');
+        var tocPath = $('.toc-marker path');
+        var tocItems;
+
+        var TOP_MARGIN = 0.1,
+            BOTTOM_MARGIN = 0.2;
+
+        var pathLength;
+
+        var lastPathStart,
+            lastPathEnd;
+
+        $(window).on('resize', drawPath);
+        $(window).on('scroll', sync);
+
+        drawPath();
+
+        function drawPath() {
+            tocItems = $('.toc li');
+
+            tocItems = tocItems.map(function (index, item) {
+                var anchor = $(item).find('a');
+                var target = $('#' + anchor.attr('href').slice(1));
+
+                return {
+                    listItem: item,
+                    anchor: anchor,
+                    target: target
+                };
+            });
+
+            tocItems = tocItems.filter(function (index, item) {
+                return !!item.target.length;
+            });
+
+            var path = [];
+            var pathIndent;
+
+            tocItems.each(function (i, item) {
+                var x = item.anchor.position().left - 5,
+                    y = item.anchor.position().top,
+                    height = item.anchor.outerHeight();
+
+                if (i === 0) {
+                    path.push('M', x, y, 'L', x, y + height);
+                    item.pathStart = 0;
+                } else {
+                    if (pathIndent !== x) path.push('L', pathIndent, y);
+
+                    path.push('L', x, y);
+
+                    tocPath.attr('d', path.join(' '));
+                    item.pathStart = tocPath[0].getTotalLength() || 0;
+
+                    path.push('L', x, y + height);
+                }
+
+                pathIndent = x;
+
+                tocPath.attr('d', path.join(' '));
+                item.pathEnd = tocPath[0].getTotalLength();
+            });
+
+            pathLength = tocPath[0].getTotalLength();
+
+            sync();
+        }
+
+        function sync() {
+            var windowHeight = $(window).height();
+
+            var pathStart = pathLength,
+                pathEnd = 0;
+
+            var visibleItems = 0;
+
+            tocItems.each(function (index, item) {
+                var targetBounds = item.target[0].getBoundingClientRect();
+
+                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+                    pathStart = Math.min(item.pathStart, pathStart);
+                    pathEnd = Math.max(item.pathEnd, pathEnd);
+
+                    visibleItems += 1;
+
+                    $(item.listItem).addClass('visible');
+                } else {
+                    $(item.listItem).removeClass('visible');
+                }
+            });
+
+            if (visibleItems > 0 && pathStart < pathEnd) {
+                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
+                    tocPath.attr('stroke-dashoffset', '1');
+                    tocPath.attr('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+                    tocPath.attr('opacity', 1);
+                }
+            } else {
+                tocPath.attr('opacity', 0);
+            }
+
+            lastPathStart = pathStart;
+            lastPathEnd = pathEnd;
+        }
+
+    </script>
+</body>
+
+</html>
