@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arafat</title>
+
+    <meta name="title" content="Tutul">
+    <meta name="description" content="">
+
+    <!-- opengraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Tutul">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/image-zoom.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/crm.css" />
+    <style>
+        .toc {
+            left: 14rem;
+            top: 2em;
+            padding: 1em;
+            width: 16rem;
+            line-height: 0;
+            position: sticky;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul ul {
+                padding-left: 2em;
+            }
+
+            li a {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                display: inline-block;
+                color: #fff;
+                text-decoration: none;
+                transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+            }
+
+            li.visible>a {
+                color: #70e87c;
+                transform: translate(5px);
+            }
+
+            ul li ul li a {
+                font-size: 12px;
+            }
+        }
+
+        .toc-marker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+
+        .contents {
+            padding: 1em;
+            max-width: 800px;
+            font-size: 1.2em;
+
+            img {
+                max-width: 100%;
+            }
+
+            .code-block {
+                white-space: pre;
+                overflow: auto;
+                max-width: 100%;
+
+                code {
+                    display: block;
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                }
+            }
+
+            .code-inline {
+                background-color: #f9f9f9;
+                padding: 4px;
+            }
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border: 1px solid #0B5F8C
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            body {
+                font-size: 14px;
+            }
+
+        }
+    </style>
+    <style>
+        .sld .title h2 {
+            color: #0E6B4F;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .sld .img-container {
+            text-align: center;
+        }
+
+        .sld .img-container img {
+            border-radius: 50%;
+        }
+
+        .sld table .left {
+            color: var(--Grey-1, #A3A3A3);
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .sld table .right {
+            color: var(--Text, #3A3D5B);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 0px 10px;
+        }
+
+        .sld .abt-title {
+            color: var(--Text, #3A3D5B);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .sld .skills {
+            display: flex;
+            padding: 2.974px 8.923px;
+            align-items: center;
+            gap: 3.718px;
+        }
+
+        .skills .skill {
+            border-radius: 20.82px;
+            background: var(--Gray-6, #F2F2F2);
+            color: #000;
+            font-size: 12.641px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 2px 10px;
+        }
+
+        .sld .personality-text {
+            color: var(--Primary-2, #1D2254);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .sld p {
+            color: #3A3D5B !important;
+            font-size: 11.897px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .sld ul li {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!-- ============================
+    =            header            =
+    =============================-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Arafat</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ----------------------------------------- -->
+    <!--                  Content                  -->
+    <!-- ----------------------------------------- -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 topimage-crm">
+                    <img src="images/works/crm/crm-bg-top.png" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="crm-title">
+                        Unlock Success with Analytica: Your Comprehensive CRM Solution for Efficient Business Management
+                        and Growth
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 d-none d-sm-block">
+                    <nav class="toc">
+                        <ul>
+                            <li><a href="#Overview">Overview</a>
+                                <ul>
+                                    <li><a href="#Problem">Problem</a></li>
+                                    <li><a href="#Solution">Solution </a></li>
+                                    <li><a href="#DesignGoal">Design Goal</a></li>
+                                    <li><a href="#BusinessGoal">Business Goal</a></li>
+                                    <li><a href="#DesignApproach">Design Approach</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Research">Research</a>
+                                <ul>
+                                    <li><a href="#Empathymap">Empathy map</a></li>
+                                    <li><a href="#SitemapUserFlow">Sitemap- User Flow</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#BrandGuide">Brand Guide</a>
+                                <ul>
+                                    <li><a href="#Typography">Typography</a></li>
+                                    <li><a href="#Colors">Colors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#HighFidelityDesign">High Fidelity Design</a>
+                                <ul>
+                                    <li><a href="#Dashboard">Dashboard</a></li>
+                                    <li><a href="#Orders">Orders</a></li>
+                                    <li><a href="#Products">Products</a></li>
+                                    <li><a href="#Customers">Customers</a></li>
+                                    <li><a href="#Analytics">Analytics</a></li>
+                                    <li><a href="#Marketing">Marketing</a></li>
+                                    <li><a href="#Integration">Integration </a></li>
+                                    <li><a href="#Communication">Communication</a></li>
+                                    <li><a href="#Setting">Setting</a></li>
+                                    <li><a href="#Profile">Profile</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#EvaluationIterations">My Progress</a>
+                                <ul>
+                                    <li><a href="#Challanges">Challanges</a></li>
+                                    <li><a href="#Learning">Learning</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                                stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+                        </svg>
+                    </nav>
+                </div>
+                <div class="col-lg-9">
+                    <article class="contents">
+                        <section id="Overview">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Overview</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="images/works/crm/overview.png" class="overview-img" />
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="images/works/crm/overview-01.png" class="img-option" />
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="images/works/crm/overview-02.png" class="img-option" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="problem" id="Problem">
+                                        <h2 class="sub-heading">Problem</h2>
+                                        <p>Bproperty faced challenges managing its diverse property services.<span
+                                                class="text-yel">
+                                                Using
+                                                multiple tools led to confusion and inefficiency among its 500
+                                                employees.
+                                            </span>
+                                            They needed a unified solution to streamline workflows and provide clients
+                                            with better service. Expora was born to solve these problems, making
+                                            property management simpler and more effective for Bproperty and its
+                                            clients.</p>
+                                        <div class="text-center">
+                                            <img src="images/works/brpo/problem.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="solution" id="Solution">
+                                        <h2 class="sub-heading">Solution</h2>
+                                        <p><span class="text-yel">Expora bring them all together in one place.</span>
+                                            Expora is the comprehensive
+                                            solution designed to unify Bproperty's property management processes. With
+                                            intuitive interfaces, seamless integration, and powerful features, Expora
+                                            <span class="text-yel">streamlines workflows, enhances team
+                                                collaboration,</span> and delivers exceptional
+                                            client experiences, setting new standards in prop-tech efficiency.
+                                        </p>
+                                        <div class="text-center">
+                                            <img src="images/works/brpo/solution.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="ourApproach" id="OurApproach">
+                                        <h2 class="sub-heading">Our Approach</h2>
+                                        <p>As a UX designer, I organized a meeting to start our design work. I brought
+                                            together the team and the people interested in our project. We made a list
+                                            of important goals for the future.<span class="text-yel">The big idea: 'We
+                                                have to learn more
+                                                about our users,'</span> which means we want to focus on what users need
+                                            and like.
+                                        </p>
+                                        <div class="row row-cols-1 row-cols-md-5 g-2 mt-2">
+                                            <div class="col">
+                                                <div class="option">Empathize</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Define</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Ideation</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Prototype</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option">Test</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="TeamContribution" id="TeamContribution">
+                                        <h2 class="sub-heading">Team & My Contribution </h2>
+                                        <p>In Bproperty there was no dedicated in house IT team. Although we had a
+                                            remote development team in Pakistan, UAE & Philippines. I worked with the
+                                            only Product manager and was a part of BI (Business Intelligence) team.
+                                        </p>
+                                        <p>
+                                            <span class="text-yel">I was the only UI UX designer as well as
+                                                researcher.</span> Me & my product manager
+                                            discussed about the business and user needs. After that I took the design
+                                            decision and iterate with the team. I also made the clickable prototype so
+                                            that the team can simulate better and take real time experience.
+                                        </p>
+                                        <p>The team was small so I had some challenges but also had the opportunity to
+                                            learn new things. That time I learned more about product management and
+                                            helped</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="Research">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Research</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="CompetitiveAnalysis" id="CompetitiveAnalysis">
+                                        <h2 class="sub-heading">Competitive Analysis</h2>
+                                        <p>Competitive analysis is like taking a good look at what other companies are
+                                            doing. We study our competitors to understand their strengths, weaknesses,
+                                            and the things they do differently. This helps us see where we stand in the
+                                            market and find opportunities to make our product even better.
+                                        </p>
+                                        <table id="competitivetable">
+                                            <tr>
+                                                <th>Company</th>
+                                                <th>Strengths</th>
+                                                <th>Weaknesses</th>
+                                                <th>Challenges Identified</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/competitive/profolio.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Comprehensive functionality including lead management,
+                                                            listing, legal validation, deal management, and payment/cash
+                                                            collection.</li>
+                                                        <li>Established presence in the market.</li>
+                                                        <li>Despite high monthly bills, it offers a wide range of
+                                                            features.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>High monthly billing, making it less cost-effective for
+                                                            Bproperty.</li>
+                                                        <li>Subpar user experience with UX issues, potentially leading
+                                                            to lower productivity.</li>
+                                                    </ul>
+                                                </td>
+                                                <td rowspan="4">
+                                                    <ol>
+                                                        <li>Integration Complexity: </li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li>Integrating multiple platforms used
+                                                            by Bproperty employees into a single solution may pose
+                                                            technical challenges.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="2">
+                                                        <li>User Adoption:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li> Convincing Bproperty employees to transition
+                                                            from existing platforms to Expora may face resistance due to
+                                                            familiarity with current tools.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="3">
+                                                        <li>UX Enhancement:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li> Improving user experience across all
+                                                            functionalities of Expora to ensure seamless adoption and
+                                                            efficient workflow.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="4">
+                                                        <li>Cost Considerations:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li>Demonstrating the cost-effectiveness of
+                                                            Expora compared to competitors like Propforce to justify the
+                                                            transition to Bproperty management.
+                                                        </li>
+                                                    </ul>
+                                                    <ol start="5">
+                                                        <li>Feature Parity:</li>
+                                                    </ol>
+                                                    <ul>
+                                                        <li> Ensuring Expora offers all essential
+                                                            features required by Bproperty employees, eliminating the
+                                                            need for using multiple platforms simultaneously.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/competitive/lms.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specializes in lead generation and approval, providing a
+                                                            focused solution for this aspect of the process.
+                                                        </li>
+                                                        <li>Likely offers efficient lead management features tailored to
+                                                            Bproperty's needs.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Limited functionality, focusing primarily on lead generation
+                                                            and approval.</li>
+                                                        <li>Lack of comprehensive features for other property management
+                                                            operations.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/competitive/profolio.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specializes in loan management and interior solutions,
+                                                            potentially providing robust features in these areas.</li>
+                                                        <li>Offers specialized functionality, which may be valuable for
+                                                            users with specific needs.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specialized in loan management and interior solutions,
+                                                            lacking features for other property management tasks.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/competitive/Tricorder.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Facilitates data collection through a mobile app, allowing
+                                                            for on-the-go information gathering.</li>
+                                                        <li>Despite potential UX and branding issues, its mobile
+                                                            functionality may appeal to users needing mobility.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Poor user experience with a mobile app interface that lacks
+                                                            consistency with Bproperty's brand.</li>
+                                                        <li>Limited functionality, primarily used for data collection
+                                                            without integration with other property management tasks.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/works/brpo/competitive/CP.png" alt="">
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Specializes in property verification and listing, providing
+                                                            essential features for this aspect of the property
+                                                            management process.</li>
+                                                        <li>Likely offers reliable functionality for property listing
+                                                            tasks.</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Limited features, primarily focused on property verification
+                                                            and listing without support for other operations.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="userInterview" id="UnderstandingExistingSystem">
+                                        <h2 class="sub-heading">Understanding Existing System</h2>
+                                        <p>I began by analyzing Bproperty's current workflow, from property listing and
+                                            lead management to task and team management.<span
+                                                class="text-yel">Understanding their existing
+                                                processes helped identify pain points that Expora could address</span>
+                                            more
+                                            effectively. By pinpointing these pain points, I could tailor Expora to
+                                            offer a superior solution and enhance efficiency across the board.</p>
+                                        <div class="row row-cols-1 row-cols-md-2 g-2 my-4">
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-01.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 1">
+                                                    <img src="images/works/brpo/ues-01.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-02.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 2">
+                                                    <img src="images/works/brpo/ues-02.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-03.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 3">
+                                                    <img src="images/works/brpo/ues-03.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/ues-04.png" data-fancybox="gallery"
+                                                    data-caption="Caption Images 4">
+                                                    <img src="images/works/brpo/ues-04.png" alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="my-4 d-flex">
+                                            <div class="col">
+                                                <div class="option op-01 h-100">
+                                                    Inventory Management Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-02 h-100">
+                                                    Marketing Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-03 h-100">
+                                                    Customer Service Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-04 h-100">
+                                                    Sales Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-05 h-100">
+                                                    Sales Pipeline Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-06 h-100">
+                                                    Sales >> Aftersales Activity
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="option op-07 h-100">
+                                                    SPA Pipeline Activity
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="affinityMapping" id="UserPersona">
+                                        <h2 class="sub-heading">User Persona</h2>
+                                    </div>
+                                    <p>Our user personas were crafted after discussions with key stakeholders including
+                                        the <span class="text-yel">Legal Manager, Mortgage Manager, Director, and
+                                            Relationship Manager.</span> Each
+                                        persona represents a distinct role within the organization, providing valuable
+                                        insights into their specific needs, goals, and pain points. By understanding
+                                        their perspectives, we ensured Expora would cater to the diverse requirements of
+                                        our users.</p>
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="dribble-portfolio">
+                                                    <img src="images/works/brpo/persona/Persona-01.svg"
+                                                        alt="Persona Image">
+
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="dribble-portfolio">
+                                                    <img src="images/works/brpo/persona/Persona-02.svg"
+                                                        alt="Persona Image">
+
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="dribble-portfolio">
+
+                                                    <img src="images/works/brpo/persona/Persona-03.svg"
+                                                        alt="Persona Image">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="dribble-portfolio">
+
+                                                    <img src="images/works/brpo/persona/Persona-04.svg"
+                                                        alt="Persona Image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-4">
+                                    <div class="affinityMapping" id="Mapping">
+                                        <h2 class="sub-heading">Mapping</h2>
+                                    </div>
+                                    <p>User journey mapping is a visual representation of a user's interactions with a
+                                        product or service across multiple touchpoints. It provides a holistic view of
+                                        the user experience, highlighting key stages, actions, emotions, and pain points
+                                        encountered along the way.</p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="mapping-img">
+                                                <img src="images/works/brpo/mapping/mapping-01.png" alt="">
+                                                <p class="text-center my-4">Initial Mapping for Dashboard</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="mapping-img">
+                                                <img src="images/works/brpo/mapping/mapping-02.png" alt="">
+                                                <p class="text-center my-4">Propforce Mapping (Direct Competitor)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="mapping-img">
+                                                <img src="images/works/brpo/mapping/mapping-03.png" alt="">
+                                                <p class="text-center my-4">Final Mapping</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <section id="Design">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center bg-design">
+                                        <img src="images/works/brpo/designbg.png" alt="">
+                                        <div class="d-title">Design</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designIdeation" id="DesignIdeation">
+                                        <h2 class="sub-heading">Design Ideation</h2>
+                                        <p>Design ideation is a <span class="text-yel">collaborative process of
+                                                generating creative ideas
+                                                and
+                                                solutions to address specific design challenges or opportunities.</span>
+                                            It
+                                            involves brainstorming, sketching, and exploring various concepts to inspire
+                                            innovation and problem-solving. Through ideation sessions, teams can
+                                            generate a wide range of ideas and concepts, fostering creativity and
+                                            driving the design process forward.</p>
+                                        <div class="design-ideation-img">
+                                            <img src="images/works/brpo/designideation.png" class="w-100"
+                                                alt="Design Ideation Image">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="sketchesWireframes" id="SketchesWireframes">
+                                        <h2 class="sub-heading">Sketches & Wireframes</h2>
+                                        <p>Sketches and wireframes are foundational tools used in the early stages of
+                                            the design process. Sketches are quick, hand-drawn representations of design
+                                            concepts, while wireframes are digital or paper-based outlines that <span
+                                                class="text-yel">define
+                                                the structure and layout of a product or interface.</span> </p>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/sketch-02.png"
+                                                    data-fancybox="sketchesWireframes"
+                                                    data-caption="Sketches & Wireframes">
+                                                    <img src="images/works/brpo/sketch-02.png"
+                                                        alt="Sketches & Wireframes 1">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="images/works/brpo/sketch-01.png"
+                                                    data-fancybox="sketchesWireframes"
+                                                    data-caption="Sketches & Wireframes">
+                                                    <img src="images/works/brpo/sketch-01.png"
+                                                        alt="Sketches & Wireframes 2">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="BrandGuidelines">
+                                        <h2 class="sub-heading">Brand Guidelines</h2>
+                                        <p>Brand guidelines are a set of rules and standards that define how a brand
+                                            should be represented visually across all touchpoints. They include
+                                            specifications for elements such as <spna class="text-yel">logos, colors,
+                                                typography, imagery, and
+                                                tone of voice.</spna> Brand guidelines ensure consistency and coherence
+                                            in brand
+                                            communication, helping to build brand recognition and trust among audiences.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <a href="images/works/brpo/brandguidelines.png"
+                                                    data-fancybox="DesignGuidelines" data-caption="Design Guidelines">
+                                                    <img src="images/works/brpo/brandguidelines.png"
+                                                        alt="Design Guidelines">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="accessibility" id="HighFidelityDesign">
+                                        <h2 class="sub-heading">High Fidelity Design </h2>
+                                        <p class="">High fidelity design refers to the <span class="text-yel">detailed,
+                                                polished version of a
+                                                user interface or product design.</span> It incorporates precise visual
+                                            elements,
+                                            such as colors, typography, imagery, and interactive components, to closely
+                                            resemble the final product. High fidelity designs are used for testing and
+                                            validation purposes, providing a realistic representation of the user
+                                            experience before development.</p>
+                                        <div class="higly-fidelity-design">
+                                            <div class="higly-image">
+                                                <img data-zoom-image
+                                                    src="images/works/brpo/HighFidelityDesign/image-01.png"
+                                                    alt="High Fidelity Design 1">
+                                                <p class="text-center my-2">CRM UI</p>
+                                            </div>
+                                            <div class=" higly-image">
+                                                <img data-zoom-image
+                                                    src="images/works/brpo/HighFidelityDesign/image-02.png"
+                                                    alt="High Fidelity Design 2">
+                                                <p class="text-center my-2">LEAD UI</p>
+                                            </div>
+                                        </div>
+                                        <div class=" higly-fidelity-design">
+                                            <div class="higly-image">
+                                                <img data-zoom-image
+                                                    src="images/works/brpo/HighFidelityDesign/image-03.png"
+                                                    alt="High Fidelity Design 3">
+                                                <p class="text-center my-2">Valuation Web</p>
+                                            </div>
+                                            <div class="higly-image">
+
+                                                <img data-zoom-image
+                                                    src="images/works/brpo/HighFidelityDesign/image-04.png"
+                                                    alt="High Fidelity Design 4">
+                                                <p class="text-center">Valuation App</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="FeaturesandSections">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Features and Sections</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="Authentications">
+                                        <h2 class="auth-title">AUTHENTICATION</h2>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <img src="images/works/brpo/Features/Authentications.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="DealSummary">
+                                        <h2 class="auth-title">Deal Summary</h2>
+                                        <p>All deals in one place. The deal will separated by category/pipeline such as
+                                            SPA(sales and purchase agreement) Pipeline, Registration Pipeline. Users
+                                            able to create task on the particular deal and view all details of a deal.
+                                            Also show the Won/Lost deals. </p>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <img src="images/works/brpo/Features/DealSummary.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="Dashboard">
+                                        <h2 class="auth-title">Dashboard</h2>
+                                        <p>The Expora dashboard is where it all begins. Here, users get a quick overview
+                                            of all the features available. They can see deals across different
+                                            pipelines, track task logs, monitor task completion ratios, view cash
+                                            collection metrics, including service charges and total cash collected. </p>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <img src="images/works/brpo/Features/Dashboard.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="Leadsection">
+                                        <h2 class="auth-title">Leadsection</h2>
+                                        <p>Users can easily search for leads using the client's phone number. They can
+                                            also add new leads, which include comprehensive client information such as
+                                            lead type (Buyer/ Seller/ Rental/ Interior/ Legal/ Mortgage), location
+                                            details, lead specifics, amenities, and more.</p>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <img src="images/works/brpo/Features/LeadSection.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="PropertyValuation">
+                                        <h2 class="auth-title">Property Valuation</h2>
+                                        <p>The property valuation provide a comprehensive overview of key factors
+                                            essential for accurate property assessment. Users can input apartment or
+                                            building features, legal status, and unit details. The platform offers cost
+                                            evaluation tools and allows users to upload property photos for visual
+                                            reference. Users can also access forecasting and comparative data on similar
+                                            properties sold or rented in the neighborhood, empowering informed
+                                            decision-making.</p>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <img src="images/works/brpo/Features/Property.png" alt="">
+                                            </div>
+                                            <div class="col-lg-12 mb-4">
+                                                <img data-zoom-image src="images/works/brpo/Features/PropertyGroup.png"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="designGuidelines" id="PropertyValuationApp">
+                                        <h2 class="auth-title">Property Valuation App</h2>
+                                        <p>Bproperty's field employees require a mobile app to efficiently gather
+                                            property data from various locations. This app seamlessly integrates with
+                                            the Expora SaaS platform. Within the app, users can easily add new projects,
+                                            accessing a range of options including project details, features,
+                                            documentation, units, and pricing. The app also facilitates capturing
+                                            property images. Once all information is inputted, users can submit it for
+                                            review. Upon review by the Expora SaaS, the data can be approved or
+                                            rejected, completing the process efficiently.</p>
+                                        <div class="row">
+                                            <div class="col-lg-12 my-4">
+                                                <img src="images/works/brpo/Features/PValuationApp.png" alt="">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <img data-zoom-image src="images/works/brpo/Features/sm1.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <img data-zoom-image src="images/works/brpo/Features/sm2.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <img data-zoom-image src="images/works/brpo/Features/sm3.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="EvaluationIterations">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Evaluation & Iterations</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 design">
+                                    <div class="userTestingProcess" id="UserTestingProcess">
+                                        <!-- <h2 class="sub-heading">User Testing Process</h2> -->
+                                        <img data-zoom-image src="images/works/brpo/UserTestingProcess.svg"
+                                            alt="User Testing Process">
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 design mt-4">
+                                    <div class="ueasuringSuccess" id="MeasuringSuccess">
+                                        <!-- <h2 class="sub-heading">Measuring Success</h2> -->
+                                        <img data-zoom-image src="images/works/brpo/measuringsuccess.svg"
+                                            alt="Measuring Success">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12 design">
+                                    <div class="results" id="Results">
+                                        <!-- <h2 class="sub-heading">Results</h2> -->
+                                        <img data-zoom-image src="images/works/brpo/result.svg" alt="Measuring Success">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="TeamFeedback" class="my-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="d-title">Evaluation & Iterations</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div id="carouselExampleInterval" class="carousel slide my-4"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="10000">
+                                                <img src="images/works/brpo/feedback/bpropertysakib.png" alt="">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <img src="images/works/brpo/feedback/bpropertysakib.png" alt="">
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-action">
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--============================
+	=            footer            =
+	=============================-->
+    <footer>
+        <section class="copyright">
+            <div class="left-side">
+                <div class="s-link">
+                    <a href="#" class="">
+                        <img class="img-fluid" src="/images/icons/s1.svg" alt="linkdin" />
+                    </a>
+                </div>
+                <div class="s-link">
+                    <a href="#" class="">
+                        <img class="img-fluid" src="/images/icons/s2.svg" alt="linkdin" />
+                    </a>
+                </div>
+            </div>
+            <div class="middle-side">
+                © <span id="copyDate">2024</span>
+            </div>
+            <div class="right-side">
+                <div class="s-link">
+                    <a href="#">
+                        <img src="/images/icons/up.svg" class="img-fluid" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/image-zoom.js"></script>
+
+    <script type="text/javascript">
+        //footer JS
+        const date = new Date();
+        let year = date.getFullYear();
+        document.getElementById("copyDate").innerHTML = year;
+
+    </script>
+    <script>
+        var toc = $('.toc');
+        var tocPath = $('.toc-marker path');
+        var tocItems;
+
+        var TOP_MARGIN = 0.1,
+            BOTTOM_MARGIN = 0.2;
+
+        var pathLength;
+
+        var lastPathStart,
+            lastPathEnd;
+
+        $(window).on('resize', drawPath);
+        $(window).on('scroll', sync);
+
+        drawPath();
+
+        function drawPath() {
+            tocItems = $('.toc li');
+
+            tocItems = tocItems.map(function (index, item) {
+                var anchor = $(item).find('a');
+                var target = $('#' + anchor.attr('href').slice(1));
+
+                return {
+                    listItem: item,
+                    anchor: anchor,
+                    target: target
+                };
+            });
+
+            tocItems = tocItems.filter(function (index, item) {
+                return !!item.target.length;
+            });
+
+            var path = [];
+            var pathIndent;
+
+            tocItems.each(function (i, item) {
+                var x = item.anchor.position().left - 5,
+                    y = item.anchor.position().top,
+                    height = item.anchor.outerHeight();
+
+                if (i === 0) {
+                    path.push('M', x, y, 'L', x, y + height);
+                    item.pathStart = 0;
+                } else {
+                    if (pathIndent !== x) path.push('L', pathIndent, y);
+
+                    path.push('L', x, y);
+
+                    tocPath.attr('d', path.join(' '));
+                    item.pathStart = tocPath[0].getTotalLength() || 0;
+
+                    path.push('L', x, y + height);
+                }
+
+                pathIndent = x;
+
+                tocPath.attr('d', path.join(' '));
+                item.pathEnd = tocPath[0].getTotalLength();
+            });
+
+            pathLength = tocPath[0].getTotalLength();
+
+            sync();
+        }
+
+        function sync() {
+            var windowHeight = $(window).height();
+
+            var pathStart = pathLength,
+                pathEnd = 0;
+
+            var visibleItems = 0;
+
+            tocItems.each(function (index, item) {
+                var targetBounds = item.target[0].getBoundingClientRect();
+
+                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+                    pathStart = Math.min(item.pathStart, pathStart);
+                    pathEnd = Math.max(item.pathEnd, pathEnd);
+
+                    visibleItems += 1;
+
+                    $(item.listItem).addClass('visible');
+                } else {
+                    $(item.listItem).removeClass('visible');
+                }
+            });
+
+            if (visibleItems > 0 && pathStart < pathEnd) {
+                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
+                    tocPath.attr('stroke-dashoffset', '1');
+                    tocPath.attr('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+                    tocPath.attr('opacity', 1);
+                }
+            } else {
+                tocPath.attr('opacity', 0);
+            }
+
+            lastPathStart = pathStart;
+            lastPathEnd = pathEnd;
+        }
+
+    </script>
+</body>
+
+</html>
