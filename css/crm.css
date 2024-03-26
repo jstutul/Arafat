@@ -54,3 +54,10 @@
 #Colors .typ {
     margin-top: -80px;
 }
+
+.cre-text {
+    position: absolute;
+    top: 24px;
+    padding: 5px 41px;
+    font-size: 14px;
+}
