@@ -171,6 +171,12 @@
     height: 25px;
     border-radius: 15px;
 }
+.pan-image {
+    width: 25%;
+}
+.accordion-body {
+    padding: 0;
+}
 .pan-image img {
     width: 100%;
     height: 200px;
