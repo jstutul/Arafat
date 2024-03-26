@@ -69,11 +69,12 @@ header .navbar-nav .nav-link:active {
 /*=====  End of header  ======*/
 
 .copyright {
+    margin: 0;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     background: var(--maincolor);
     color: var(--lighashcolor);
-    padding: 5px 10px;
     justify-content: space-between;
     font-size: 14px;
 }
@@ -147,4 +148,103 @@ main .heading-title {
     width: 1000px;
     margin: 0 auto;
     row-gap: 40px;
+}
+
+.btntop {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+}
+.copyright {
+    position: relative;
+}
+.toc {
+    left: 14rem;
+    top: 2em;
+    padding: 1em;
+    width: 16rem;
+    line-height: 0;
+    position: sticky;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul ul {
+        padding-left: 2em;
+    }
+
+    li a {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        /* transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); */
+    }
+
+    li.visible > a {
+        color: #70e87c;
+        transform: translate(5px);
+    }
+
+    ul li ul li a {
+        font-size: 12px;
+    }
+}
+
+.toc-marker {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contents {
+    /* padding: 1em; */
+    /* max-width: 800px; */
+    font-size: 1.2em;
+
+    img {
+        max-width: 100%;
+    }
+
+    .code-block {
+        white-space: pre;
+        overflow: auto;
+        max-width: 100%;
+
+        code {
+            display: block;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+    }
+
+    .code-inline {
+        background-color: #f9f9f9;
+        padding: 4px;
+    }
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid #0b5f8c;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
 }

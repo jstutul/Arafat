@@ -16,7 +16,7 @@
     height: 460px;
     width: 445px;
     border: 1px solid #fff;
-    border-radius: 11px;
+    border-radius: 16px 17px 12px 12px;
     overflow: hidden;
     background-color: var(--maincolor) !important;
 }

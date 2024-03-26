@@ -19,8 +19,10 @@
 }
 
 .contact-form .form-control {
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid var(--70-e-87-c, #70e87c);
+    background-color: #000000;
+    color: #fff;
 }
 .contact-form button {
     border-radius: 20px;
@@ -43,4 +45,13 @@
 .cont {
     margin-top: 105px;
     margin-bottom: 81px;
+}
+.form-control::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: #fff;
 }

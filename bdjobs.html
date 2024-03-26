@@ -8,15 +8,7 @@
 
     <meta name="title" content="Tutul">
     <meta name="description" content="">
-
-    <!-- opengraph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="Tutul">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,102 +21,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/bdj.css" />
-    <style>
-        .toc {
-            left: 14rem;
-            top: 2em;
-            padding: 1em;
-            width: 16rem;
-            line-height: 0;
-            position: sticky;
-
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            ul ul {
-                padding-left: 2em;
-            }
-
-            li a {
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 24px;
-                letter-spacing: 0em;
-                text-align: left;
-                display: inline-block;
-                color: #fff;
-                text-decoration: none;
-                transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-            }
-
-            li.visible>a {
-                color: #70e87c;
-                transform: translate(5px);
-            }
-
-            ul li ul li a {
-                font-size: 12px;
-            }
-        }
-
-        .toc-marker {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-
-            path {
-                transition: all 0.3s ease;
-            }
-        }
-
-        .contents {
-            padding: 1em;
-            max-width: 800px;
-            font-size: 1.2em;
-
-            img {
-                max-width: 100%;
-            }
-
-            .code-block {
-                white-space: pre;
-                overflow: auto;
-                max-width: 100%;
-
-                code {
-                    display: block;
-                    background-color: #f9f9f9;
-                    padding: 10px;
-                }
-            }
-
-            .code-inline {
-                background-color: #f9f9f9;
-                padding: 4px;
-            }
-        }
-
-        table,
-        td,
-        th {
-            border-collapse: collapse;
-            border: 1px solid #0B5F8C
-        }
-
-        @media screen and (max-width: 1200px) {
-
-            body {
-                font-size: 14px;
-            }
-
-        }
-    </style>
 </head>
 
 
@@ -169,7 +65,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 top-banner">
-                    <div class="row top-content">
+                    <img src="images/works/bdj/bdjobs-bg.svg" class="w-100" alt="bdjobs">
+                    <!-- <div class="row top-content">
                         <div class="col-lg-7">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -217,7 +114,7 @@
                         <div class="col-lg-5 top-image d-sm-none d-md-block">
                             <img src="/images/works/bdj/fg.png" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="row">
@@ -273,10 +170,6 @@
                                 <a href="#TeamFeedback">Team Feedback</a>
                             </li>
                         </ul>
-                        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
-                                stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
-                        </svg>
                     </nav>
                 </div>
                 <div class="col-lg-9">
@@ -328,7 +221,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="btn-sec p-4">
-                                                        <button class="btn-emp">Employee</button>
+                                                        <button class="btn-jobs">Employee</button>
                                                     </div>
                                                     <div class="opt-sec">
                                                         <ul>
@@ -400,7 +293,16 @@
                                             team, we're in sync. It's not just creating a product;<span
                                                 class="text-yel">it's crafting an
                                                 experience</span> , and we do it together, every step of the way.</p>
-                                        <div class="ddflex d-flex align-items-center">
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/ourapproach.svg" data-fancybox="our-approach"
+                                                    data-caption="Our Approach">
+                                                    <img src="images/works/bdj/ourapproach.svg" alt="Our Approach">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="ddflex d-flex align-items-center">
                                             <div class="apr">Product Team</div>
                                             <div class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="45"
                                                     height="6" viewBox="0 0 60 6" fill="none">
@@ -478,11 +380,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <div class="TeamContribution" id="TeamContribution">
+                                    <div class="TeamContribution my-4" id="TeamContribution">
                                         <h2 class="sub-heading">Team & My Contribution </h2>
                                         <p>I was the <span class="text-yel">UI/UX</span> designer on the Design Team at
                                             Bdjobs, where there are <span class="text-yel">32
@@ -506,9 +408,19 @@
                                                 different devices and the <span class="text-yel">Mobile App</span>
                                                 version
                                                 as well.</p>
-                                            <div class="temps-img">
-                                                <img src="images/works/bdj/term-condition.png" alt="">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <a href="images/works/bdj/tean-contribution.svg"
+                                                        data-fancybox="team-contribution"
+                                                        data-caption="team-contribution">
+                                                        <img src="images/works/bdj/tean-contribution.svg"
+                                                            alt="team-contribution">
+                                                    </a>
+                                                </div>
                                             </div>
+                                            <!-- <div class="temps-img">
+                                                <img src="images/works/bdj/term-condition.png" alt="">
+                                            </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -524,7 +436,15 @@
                                     <div class="Brainstorming" id="Brainstorming">
 
                                         <h2 class="sub-heading">Brainstorming </h2>
-                                        <div class="row row-cols-1 row-cols-md-3 g-2">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/brain-stroming.svg"
+                                                    data-fancybox="brain-stroming" data-caption="brain-stroming">
+                                                    <img src="images/works/bdj/brain-stroming.svg" alt="brain-stroming">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="row row-cols-1 row-cols-md-3 g-2">
                                             <div class="col">
                                                 <div class="r-single first">
                                                     <span>Online Test Brainstorm Phase steps</span>
@@ -697,7 +617,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -874,11 +794,19 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <div class="userInterview" id="UserInterview">
+                                    <div class="userInterview my-4" id="UserInterview">
                                         <h2 class="sub-heading">User Interview</h2>
                                         <p>Understanding the needs, preferences, and pain points of potential users to
                                             inform the design and development of the Online Test product.</p>
-                                        <div class="ddflex d-flex align-items-center">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/user-interview.svg"
+                                                    data-fancybox="user-interview" data-caption="user-interview">
+                                                    <img src="images/works/bdj/user-interview.svg" alt="user-interview">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="ddflex d-flex align-items-center">
                                             <div class="apr op1">
                                                 <p>Identify Participants:</p>
                                                 <ul>
@@ -1027,14 +955,34 @@
                                                 </div>
                                             </div>
 
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="affinityMapping" id="AffinityMapping">
                                         <h2 class="sub-heading">Affinity Mapping</h2>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <a href="images/works/bdj/affinity-01.svg" data-fancybox="affinity"
+                                                    data-caption="affinity">
+                                                    <img src="images/works/bdj/affinity-01.svg" alt="affinity">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="images/works/bdj/affinity-02.svg" data-fancybox="affinity"
+                                                    data-caption="affinity">
+                                                    <img src="images/works/bdj/affinity-02.svg" alt="affinity">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/affinity-03.svg" data-fancybox="affinity"
+                                                    data-caption="affinity">
+                                                    <img src="images/works/bdj/affinity-03.svg" alt="affinity">
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row row-cols-1 row-cols-md-2 g-4 aff-map">
+                                    <!-- <div class="row row-cols-1 row-cols-md-2 g-4 aff-map">
                                         <div class="col-lg-8">
                                             <h6 class="text-yel">Affinity Groups:</h6>
                                             <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
@@ -1235,15 +1183,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="userJourneyMapping my-4" id="UserJourneyMapping">
                                         <h2 class="sub-heading">User Journey Mapping</h2>
                                     </div>
-                                    <div class="user-exp">
-                                        <img src="images/works/bdj/sitemap.png" class="img-fluid" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a href="images/works/bdj/sitemap.png" data-fancybox="sitemap"
+                                                data-caption="sitemap">
+                                                <img src="images/works/bdj/sitemap.png" alt="sitemap">
+                                            </a>
+                                        </div>
                                     </div>
+                                    <!-- <div class="user-exp">
+                                        <img src="images/works/bdj/sitemap.png" class="img-fluid" alt="">
+                                    </div> -->
                                 </div>
 
                             </div>
@@ -1289,10 +1245,18 @@
                                                 foundation before delving into the design</span> details, setting the
                                             stage for a
                                             user-centric and visually compelling Online Test platform.</p>
-                                        <div class="sketch-img">
+                                        <!-- <div class="sketch-img">
                                             <img src="images/works/bdj/sketch-01.png" alt="" class="img-fluid">
                                             <img src="images/works/bdj/sketch-02.jpeg" alt="" class="img-fluid my-2">
                                             <img src="images/works/bdj/sketch-03.png" alt="" class="img-fluid">
+                                        </div> -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/wireframing-min.png"
+                                                    data-fancybox="wireframing" data-caption="wireframing">
+                                                    <img src="images/works/bdj/wireframing-min.png" alt="wireframing">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1307,7 +1271,7 @@
                                             consistency and structure in the design by establishing a clear hierarchy
                                             and rhythm. Additionally, by creating reusable components, it also helped to
                                             expedite the work of the front-end team.</p>
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-lg-4 pan-image p-2">
                                                 <a href="images/works/bdj/design-guideline-02.png"
                                                     data-fancybox="gallery" data-caption="Caption Images 1">
@@ -1337,6 +1301,15 @@
                                                     data-fancybox="gallery" data-caption="Caption Images 1">
                                                     <img src="images/works/bdj/design-guideline-05.png"
                                                         alt="Image Gallery">
+                                                </a>
+                                            </div>
+                                        </div> -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/design-guideline.svg"
+                                                    data-fancybox="design-guideline" data-caption="design-guideline">
+                                                    <img src="images/works/bdj/design-guideline.svg"
+                                                        alt="design-guideline">
                                                 </a>
                                             </div>
                                         </div>
@@ -1395,61 +1368,13 @@
 
                                             <div class="col-lg-12 mt-4">
                                                 <div class="row">
-                                                    <div class="col-lg-3">
-                                                        <div class="ico-img">
-                                                            <a href="images/works/bdj/image-1.jpg"
-                                                                data-fancybox="gallery" data-caption="Caption Images 1">
-                                                                <img src="images/works/bdj/image-1.jpg"
-                                                                    alt="Image Gallery">
-                                                            </a>
-                                                        </div>
-                                                        <div class="content p-4">
-                                                            <p class="job-text">After
-                                                                invitation, user will get a
-                                                                button to enter
-                                                                the exam
-                                                                room</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="ico-img">
-                                                            <a href="images/works/bdj/image-2.jpg"
-                                                                data-fancybox="gallery" data-caption="Caption Images 1">
-                                                                <img src="images/works/bdj/image-2.jpg"
-                                                                    alt="Image Gallery">
-                                                            </a>
-                                                        </div>
-                                                        <div class="content p-4">
-                                                            <p class="job-text">users need to share his location. So
-                                                                that employee can track the location of the right
-                                                                candidate</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="ico-img">
-                                                            <a href="images/works/bdj/image-3.jpg"
-                                                                data-fancybox="gallery" data-caption="Caption Images 1">
-                                                                <img src="images/works/bdj/image-3.jpg"
-                                                                    alt="Image Gallery">
-                                                            </a>
-                                                            <!-- <img src="images/works/bdj/image-3.jpg" alt=""> -->
-                                                        </div>
-                                                        <div class="content p-4">
-                                                            <p class="job-text">MCQ question paper</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="ico-img">
-                                                            <a href="images/works/bdj/image-4.jpg"
-                                                                data-fancybox="gallery" data-caption="Caption Images 1">
-                                                                <img src="images/works/bdj/image-4.jpg"
-                                                                    alt="Image Gallery">
-                                                            </a>
-                                                        </div>
-                                                        <div class="content p-4">
-                                                            <p class="job-text">Descriptive questions exam. Here ar all
-                                                                the question list</p>
-                                                        </div>
+                                                    <div class="col-lg-12">
+                                                        <a href="images/works/bdj/job-seeker-panel.svg"
+                                                            data-fancybox="job-seeker-panel"
+                                                            data-caption="job-seeker-panel">
+                                                            <img src="images/works/bdj/job-seeker-panel.svg"
+                                                                alt="job-seeker-panel">
+                                                        </a>
                                                     </div>
 
                                                 </div>
@@ -1572,7 +1497,17 @@
                                             technical
                                             standards but also aligns seamlessly with user expectations, creating a
                                             reliable and user-centric assessment platform.</p>
-                                        <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <a href="images/works/bdj/user-testing-process.svg"
+                                                    data-fancybox="user-testing-process"
+                                                    data-caption="user-testing-process">
+                                                    <img src="images/works/bdj/user-testing-process.svg"
+                                                        alt="user-testing-process">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
                                             <div class="col">
                                                 <div class="option h-100">
                                                     <p>1. Test Planning:</p>
@@ -1653,7 +1588,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -1663,7 +1598,14 @@
                                         <p>To measure the success of the Online Test product, we employ a multifaceted
                                             measurement strategy encompassing various key performance indicators (KPIs)
                                             and user-centric benchmarks. Our approach involves:</p>
-                                        <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
+                                        <div class="col-lg-12">
+                                            <a href="images/works/bdj/measuring-success.svg"
+                                                data-fancybox="measuring-success" data-caption="measuring-success">
+                                                <img src="images/works/bdj/measuring-success.svg"
+                                                    alt="measuring-success">
+                                            </a>
+                                        </div>
+                                        <!-- <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
                                             <div class="col">
                                                 <div class="option h-100">
                                                     <p>1. User Satisfaction Surveys:</p>
@@ -1772,7 +1714,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -1883,7 +1825,13 @@
                                             the user experience. This continuous improvement cycle is instrumental in
                                             ensuring that the product aligns precisely with user needs and industry
                                             standards.</p>
-                                        <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
+                                        <div class="col-lg-12">
+                                            <a href="images/works/bdj/feedback-design.svg"
+                                                data-fancybox="feedback-design" data-caption="feedback-design">
+                                                <img src="images/works/bdj/feedback-design.svg" alt="feedback-design">
+                                            </a>
+                                        </div>
+                                        <!-- <div class="row row-cols-1 row-cols-md-4 g-2 mt-2">
                                             <div class="col">
                                                 <div class="option h-100">
                                                     <p>1. Initial Design Implementation:</p>
@@ -1960,7 +1908,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -1979,29 +1927,15 @@
                                         data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active" data-bs-interval="10000">
-                                                <div class="card testimonial p-4 h-100">
-                                                    <div class="card-img">
-                                                        <img src="images/works/bdj/me.png" class="" alt="...">
-                                                    </div>
-                                                    <div class="body">
-                                                        <h5>Ahmed khan Junayed</h5>
-                                                        <p>Product Analyst @ Ami Probashi | Product
-                                                            Manager | Product Designer | SaaS | Job Portal</p>
-                                                        <p><i class="fa fa-eye"></i> All Linkedin members</p>
-                                                        <p class="mt-4">I have had the pleasure of working with Arafat
-                                                            on several
-                                                            projects at Bdjobs. He is a creative and tech-savvy UI/UX
-                                                            designer with interaction skills on different levels, from
-                                                            product-specific to strategic planning. He is fully aware of
-                                                            the market trends and is a true professional who always
-                                                            follows through on his commitments. He works diligently to
-                                                            ensure that the solution provides the highest possible
-                                                            value. In the future, I would not hesitate to suggest Arafat
-                                                            for the UI/UX industry.</p>
-                                                    </div>
-                                                </div>
+                                                <img src="images/works/bdj/feedback-01.png" alt="">
                                             </div>
                                             <div class="carousel-item" data-bs-interval="10000">
+                                                <img src="images/works/bdj/feedback-02.png" alt="">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="10000">
+                                                <img src="images/works/bdj/feedback-03.png" alt="">
+                                            </div>
+                                            <!-- <div class="carousel-item" data-bs-interval="10000">
                                                 <div class="card testimonial p-4 h-100">
                                                     <div class="card-img">
                                                         <img src="images/works/bdj/me.png" class="" alt="...">
@@ -2046,7 +1980,7 @@
                                                             for the UI/UX industry.</p>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="carousel-action">
                                             <button class="carousel-control-prev" type="button"
@@ -2105,120 +2039,8 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
 
-    <script type="text/javascript">
-        //footer JS
-        const date = new Date();
-        let year = date.getFullYear();
-        document.getElementById("copyDate").innerHTML = year;
-    </script>
-    <script>
-        var toc = $('.toc');
-        var tocPath = $('.toc-marker path');
-        var tocItems;
-
-        var TOP_MARGIN = 0.1,
-            BOTTOM_MARGIN = 0.2;
-
-        var pathLength;
-
-        var lastPathStart,
-            lastPathEnd;
-
-        $(window).on('resize', drawPath);
-        $(window).on('scroll', sync);
-
-        drawPath();
-
-        function drawPath() {
-            tocItems = $('.toc li');
-
-            tocItems = tocItems.map(function (index, item) {
-                var anchor = $(item).find('a');
-                var target = $('#' + anchor.attr('href').slice(1));
-
-                return {
-                    listItem: item,
-                    anchor: anchor,
-                    target: target
-                };
-            });
-
-            tocItems = tocItems.filter(function (index, item) {
-                return !!item.target.length;
-            });
-
-            var path = [];
-            var pathIndent;
-
-            tocItems.each(function (i, item) {
-                var x = item.anchor.position().left - 5,
-                    y = item.anchor.position().top,
-                    height = item.anchor.outerHeight();
-
-                if (i === 0) {
-                    path.push('M', x, y, 'L', x, y + height);
-                    item.pathStart = 0;
-                } else {
-                    if (pathIndent !== x) path.push('L', pathIndent, y);
-
-                    path.push('L', x, y);
-
-                    tocPath.attr('d', path.join(' '));
-                    item.pathStart = tocPath[0].getTotalLength() || 0;
-
-                    path.push('L', x, y + height);
-                }
-
-                pathIndent = x;
-
-                tocPath.attr('d', path.join(' '));
-                item.pathEnd = tocPath[0].getTotalLength();
-            });
-
-            pathLength = tocPath[0].getTotalLength();
-
-            sync();
-        }
-
-        function sync() {
-            var windowHeight = $(window).height();
-
-            var pathStart = pathLength,
-                pathEnd = 0;
-
-            var visibleItems = 0;
-
-            tocItems.each(function (index, item) {
-                var targetBounds = item.target[0].getBoundingClientRect();
-
-                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
-                    pathStart = Math.min(item.pathStart, pathStart);
-                    pathEnd = Math.max(item.pathEnd, pathEnd);
-
-                    visibleItems += 1;
-
-                    $(item.listItem).addClass('visible');
-                } else {
-                    $(item.listItem).removeClass('visible');
-                }
-            });
-
-            if (visibleItems > 0 && pathStart < pathEnd) {
-                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
-                    tocPath.attr('stroke-dashoffset', '1');
-                    tocPath.attr('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
-                    tocPath.attr('opacity', 1);
-                }
-            } else {
-                tocPath.attr('opacity', 0);
-            }
-
-            lastPathStart = pathStart;
-            lastPathEnd = pathEnd;
-        }
-
-    </script>
 </body>
 
 </html>

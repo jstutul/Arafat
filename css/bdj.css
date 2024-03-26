@@ -1,7 +1,7 @@
 .top-banner {
     width: 100%;
     background-image: url(/images/works/bdj/bluebg.png);
-    min-height: 542px;
+    /* max-height: 542px; */
 }
 .top-content {
     margin-top: 100px;
@@ -78,6 +78,13 @@
     border: none;
     color: #fff;
     background-color: #9d0191b2;
+    padding: 5px 17px;
+}
+.btn-jobs {
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: #0b5f8cb2;
     padding: 5px 17px;
 }
 .how-it-work .title {

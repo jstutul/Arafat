@@ -53,13 +53,13 @@
                             <a class="nav-link" aria-current="page" href="/index.html">Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html"> About</a>
+                            <a class="nav-link active" href="/about.html"> About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"> Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/contact.html"> Contact</a>
+                            <a class="nav-link" href="/contact.html"> Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -121,8 +121,6 @@
                                 </li>
                             </ul>
                         </div>
-
-
                         <div class="col-lg-9 content-scroll">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -1777,8 +1775,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -1789,7 +1785,7 @@
     <!--============================
 	=            footer            =
 	=============================-->
-    <footer>
+    <footer class="container">
         <section class="copyright">
             <div class="left-side">
                 <div class="s-link">
@@ -1807,7 +1803,7 @@
                 © <span id="copyDate">2024</span>
             </div>
             <div class="right-side">
-                <div class="s-link">
+                <div class="s-link btntop">
                     <a href="#">
                         <img src="/images/icons/up.svg" class="img-fluid" />
                     </a>
@@ -1821,24 +1817,33 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-        //footer JS
-        const date = new Date();
-        let year = date.getFullYear();
-        document.getElementById("copyDate").innerHTML = year;
-
-    </script>
+    <script src="js/common.js"></script>
     <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            const menuItems = document.querySelectorAll('.nav-pills > .nav-item > .nav-link');
+            menuItems.forEach((menuItem) => {
+                menuItem.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').slice(1); // Get the target ID from the href attribute
+                    const target = document.getElementById(targetId); // Get the target element
+                    if (target) {
+                        const headerHeight = document.querySelector('header').offsetHeight; // Adjust as needed
+                        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight; // Calculate target position
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
         window.addEventListener('scroll', function () {
             let scrollDistance = window.scrollY;
-
-            // Define the sections and menu items
             const sections = document.querySelectorAll('.content-scroll > .row > .col-lg-12');
             const menuItems = document.querySelectorAll('.nav-pills > .nav-item > .nav-link');
-
             sections.forEach((section, index) => {
-                if (section.offsetTop - 50 <= scrollDistance) {
+                if (section.offsetTop - 0 <= scrollDistance) {
                     menuItems.forEach((menuItem) => {
                         menuItem.classList.remove('active');
                     });

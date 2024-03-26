@@ -27,105 +27,9 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/image-zoom.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/bproperty.css" />
-    <style>
-        .toc {
-            left: 14rem;
-            top: 2em;
-            padding: 1em;
-            width: 16rem;
-            line-height: 0;
-            position: sticky;
 
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            ul ul {
-                padding-left: 2em;
-            }
-
-            li a {
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 24px;
-                letter-spacing: 0em;
-                text-align: left;
-                display: inline-block;
-                color: #fff;
-                text-decoration: none;
-                transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-            }
-
-            li.visible>a {
-                color: #70e87c;
-                transform: translate(5px);
-            }
-
-            ul li ul li a {
-                font-size: 12px;
-            }
-        }
-
-        .toc-marker {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-
-            path {
-                transition: all 0.3s ease;
-            }
-        }
-
-        .contents {
-            padding: 1em;
-            max-width: 800px;
-            font-size: 1.2em;
-
-            img {
-                max-width: 100%;
-            }
-
-            .code-block {
-                white-space: pre;
-                overflow: auto;
-                max-width: 100%;
-
-                code {
-                    display: block;
-                    background-color: #f9f9f9;
-                    padding: 10px;
-                }
-            }
-
-            .code-inline {
-                background-color: #f9f9f9;
-                padding: 4px;
-            }
-        }
-
-        table,
-        td,
-        th {
-            border-collapse: collapse;
-            border: 1px solid #0B5F8C
-        }
-
-        @media screen and (max-width: 1200px) {
-
-            body {
-                font-size: 14px;
-            }
-
-        }
-    </style>
     <style>
         .sld .title h2 {
             color: #0E6B4F;
@@ -228,7 +132,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/index.html">Works</a>
+                            <a class="nav-link active" aria-current="page" href="/index.html">Works</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html"> About</a>
@@ -237,7 +141,7 @@
                             <a class="nav-link" href="#"> Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/contact.html"> Contact</a>
+                            <a class="nav-link" href="/contact.html"> Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -313,10 +217,6 @@
                                 <a href="#TeamFeedback">Team Feedback</a>
                             </li>
                         </ul>
-                        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
-                                stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
-                        </svg>
                     </nav>
                 </div>
                 <div class="col-lg-9">
@@ -617,27 +517,27 @@
                                             offer a superior solution and enhance efficiency across the board.</p>
                                         <div class="row row-cols-1 row-cols-md-2 g-2 my-4">
                                             <div class="col-lg-6">
-                                                <a href="images/works/brpo/ues-01.png" data-fancybox="gallery"
-                                                    data-caption="Caption Images 1">
-                                                    <img src="images/works/brpo/ues-01.png" alt="Image Gallery">
+                                                <a href="images/works/brpo/ues-01.svg" data-fancybox="Understanding"
+                                                    data-caption="Understanding 1">
+                                                    <img src="images/works/brpo/ues-01.svg" alt="Understanding 1">
                                                 </a>
                                             </div>
                                             <div class="col-lg-6">
-                                                <a href="images/works/brpo/ues-02.png" data-fancybox="gallery"
-                                                    data-caption="Caption Images 2">
-                                                    <img src="images/works/brpo/ues-02.png" alt="Image Gallery">
+                                                <a href="images/works/brpo/ues-02.svg" data-fancybox="Understanding"
+                                                    data-caption="Understanding 2">
+                                                    <img src="images/works/brpo/ues-02.svg" alt="Understanding 2">
                                                 </a>
                                             </div>
                                             <div class="col-lg-6">
-                                                <a href="images/works/brpo/ues-03.png" data-fancybox="gallery"
-                                                    data-caption="Caption Images 3">
-                                                    <img src="images/works/brpo/ues-03.png" alt="Image Gallery">
+                                                <a href="images/works/brpo/ues-03.svg" data-fancybox="Understanding"
+                                                    data-caption="Understanding 3">
+                                                    <img src="images/works/brpo/ues-03.svg" alt="Understanding 3">
                                                 </a>
                                             </div>
                                             <div class="col-lg-6">
-                                                <a href="images/works/brpo/ues-04.png" data-fancybox="gallery"
-                                                    data-caption="Caption Images 4">
-                                                    <img src="images/works/brpo/ues-04.png" alt="Image Gallery">
+                                                <a href="images/works/brpo/ues-04.svg" data-fancybox="Understanding"
+                                                    data-caption="Understanding 4">
+                                                    <img src="images/works/brpo/ues-04.svg" alt="Understanding 4">
                                                 </a>
                                             </div>
                                         </div>
@@ -745,20 +645,31 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="mapping-img">
-                                                <img src="images/works/brpo/mapping/mapping-01.png" alt="">
+                                                <a href="images/works/brpo/mapping/mapping-01.svg"
+                                                    data-fancybox="mapping" data-caption="mapping">
+                                                    <img src="images/works/brpo/mapping/mapping-01.svg" alt="mapping">
+                                                </a>
+                                                <!-- <img src="images/works/brpo/mapping/mapping-01.png" alt=""> -->
                                                 <p class="text-center my-4">Initial Mapping for Dashboard</p>
                                             </div>
 
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="mapping-img">
-                                                <img src="images/works/brpo/mapping/mapping-02.png" alt="">
+                                                <a href="images/works/brpo/mapping/mapping-02.svg"
+                                                    data-fancybox="mapping" data-caption="mapping">
+                                                    <img src="images/works/brpo/mapping/mapping-02.svg" alt="mapping">
+                                                </a>
+                                                <!-- <img src="images/works/brpo/mapping/mapping-02.png" alt=""> -->
                                                 <p class="text-center my-4">Propforce Mapping (Direct Competitor)</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="mapping-img">
-                                                <img src="images/works/brpo/mapping/mapping-03.png" alt="">
+                                                <a href="images/works/brpo/mapping/mapping-03.svg"
+                                                    data-fancybox="mapping" data-caption="mapping">
+                                                    <img src="images/works/brpo/mapping/mapping-03.svg" alt="mapping">
+                                                </a>
                                                 <p class="text-center my-4">Final Mapping</p>
                                             </div>
                                         </div>
@@ -789,8 +700,13 @@
                                             generate a wide range of ideas and concepts, fostering creativity and
                                             driving the design process forward.</p>
                                         <div class="design-ideation-img">
-                                            <img src="images/works/brpo/designideation.png" class="w-100"
-                                                alt="Design Ideation Image">
+                                            <a href="images/works/brpo/designideation.png"
+                                                data-fancybox="Design-Ideation" data-caption="Design-Ideation">
+                                                <img src="images/works/brpo/designideation.png"
+                                                    alt="Design Ideation image">
+                                            </a>
+                                            <!-- <img src="images/works/brpo/designideation.png" class="w-100"
+                                                alt="Design Ideation Image"> -->
                                         </div>
                                     </div>
 
@@ -965,8 +881,11 @@
                                                 <img src="images/works/brpo/Features/Property.png" alt="">
                                             </div>
                                             <div class="col-lg-12 mb-4">
-                                                <img data-zoom-image src="images/works/brpo/Features/PropertyGroup.png"
-                                                    alt="">
+                                                <a href="images/works/brpo/Features/PropertyGroup.png"
+                                                    data-fancybox="PropertyValuation" data-caption="PropertyValuation">
+                                                    <img src="images/works/brpo/Features/PropertyGroup.png"
+                                                        alt="PropertyValuation">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -989,16 +908,28 @@
                                             <div class="col-lg-12">
                                                 <div class="row">
                                                     <div class="col-lg-4">
-                                                        <img data-zoom-image src="images/works/brpo/Features/sm1.png"
-                                                            alt="">
+                                                        <a href="images/works/brpo/Features/sm1.png"
+                                                            data-fancybox="Property-Valuation"
+                                                            data-caption="Property Valuation">
+                                                            <img src="images/works/brpo/Features/sm1.png"
+                                                                alt="Property Valuation">
+                                                        </a>
                                                     </div>
                                                     <div class="col-lg-4">
-                                                        <img data-zoom-image src="images/works/brpo/Features/sm2.png"
-                                                            alt="">
+                                                        <a href="images/works/brpo/Features/sm2.png"
+                                                            data-fancybox="Property-Valuation"
+                                                            data-caption="Property Valuation">
+                                                            <img src="images/works/brpo/Features/sm2.png"
+                                                                alt="Property Valuation">
+                                                        </a>
                                                     </div>
                                                     <div class="col-lg-4">
-                                                        <img data-zoom-image src="images/works/brpo/Features/sm3.png"
-                                                            alt="">
+                                                        <a href="images/works/brpo/Features/sm3.png"
+                                                            data-fancybox="Property-Valuation"
+                                                            data-caption="Property Valuation">
+                                                            <img src="images/works/brpo/Features/sm3.png"
+                                                                alt="Property Valuation">
+                                                        </a>
                                                     </div>
                                                 </div>
 
@@ -1018,17 +949,22 @@
                                 </div>
                                 <div class="col-lg-12 design">
                                     <div class="userTestingProcess" id="UserTestingProcess">
-                                        <!-- <h2 class="sub-heading">User Testing Process</h2> -->
-                                        <img data-zoom-image src="images/works/brpo/UserTestingProcess.svg"
-                                            alt="User Testing Process">
+                                        <h2 class="sub-heading">User Testing Process</h2>
+                                        <a href="images/works/brpo/user-testing.svg" data-fancybox="user-testing"
+                                            data-caption="user-testing">
+                                            <img src="images/works/brpo/user-testing.svg" alt="user-testing">
+                                        </a>
                                     </div>
 
                                 </div>
                                 <div class="col-lg-12 design mt-4">
                                     <div class="ueasuringSuccess" id="MeasuringSuccess">
-                                        <!-- <h2 class="sub-heading">Measuring Success</h2> -->
-                                        <img data-zoom-image src="images/works/brpo/measuringsuccess.svg"
-                                            alt="Measuring Success">
+                                        <h2 class="sub-heading">Measuring Success</h2>
+                                        <a href="images/works/brpo/measuringsuccess.svg"
+                                            data-fancybox="user-measuringsuccess" data-caption="user-measuringsuccess">
+                                            <img src="images/works/brpo/measuringsuccess.svg"
+                                                alt="user-measuringsuccess">
+                                        </a>
 
                                     </div>
 
@@ -1036,9 +972,11 @@
 
                                 <div class="col-lg-12 design">
                                     <div class="results" id="Results">
-                                        <!-- <h2 class="sub-heading">Results</h2> -->
-                                        <img data-zoom-image src="images/works/brpo/result.svg" alt="Measuring Success">
-
+                                        <h2 class="sub-heading">Results</h2>
+                                        <a href="images/works/brpo/result.svg" data-fancybox="user-result"
+                                            data-caption="user-result">
+                                            <img src="images/works/brpo/result.svg" alt="user-result">
+                                        </a>
                                     </div>
 
                                 </div>
@@ -1122,122 +1060,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/image-zoom.js"></script>
-
-    <script type="text/javascript">
-        //footer JS
-        const date = new Date();
-        let year = date.getFullYear();
-        document.getElementById("copyDate").innerHTML = year;
-
-    </script>
-    <script>
-        var toc = $('.toc');
-        var tocPath = $('.toc-marker path');
-        var tocItems;
-
-        var TOP_MARGIN = 0.1,
-            BOTTOM_MARGIN = 0.2;
-
-        var pathLength;
-
-        var lastPathStart,
-            lastPathEnd;
-
-        $(window).on('resize', drawPath);
-        $(window).on('scroll', sync);
-
-        drawPath();
-
-        function drawPath() {
-            tocItems = $('.toc li');
-
-            tocItems = tocItems.map(function (index, item) {
-                var anchor = $(item).find('a');
-                var target = $('#' + anchor.attr('href').slice(1));
-
-                return {
-                    listItem: item,
-                    anchor: anchor,
-                    target: target
-                };
-            });
-
-            tocItems = tocItems.filter(function (index, item) {
-                return !!item.target.length;
-            });
-
-            var path = [];
-            var pathIndent;
-
-            tocItems.each(function (i, item) {
-                var x = item.anchor.position().left - 5,
-                    y = item.anchor.position().top,
-                    height = item.anchor.outerHeight();
-
-                if (i === 0) {
-                    path.push('M', x, y, 'L', x, y + height);
-                    item.pathStart = 0;
-                } else {
-                    if (pathIndent !== x) path.push('L', pathIndent, y);
-
-                    path.push('L', x, y);
-
-                    tocPath.attr('d', path.join(' '));
-                    item.pathStart = tocPath[0].getTotalLength() || 0;
-
-                    path.push('L', x, y + height);
-                }
-
-                pathIndent = x;
-
-                tocPath.attr('d', path.join(' '));
-                item.pathEnd = tocPath[0].getTotalLength();
-            });
-
-            pathLength = tocPath[0].getTotalLength();
-
-            sync();
-        }
-
-        function sync() {
-            var windowHeight = $(window).height();
-
-            var pathStart = pathLength,
-                pathEnd = 0;
-
-            var visibleItems = 0;
-
-            tocItems.each(function (index, item) {
-                var targetBounds = item.target[0].getBoundingClientRect();
-
-                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
-                    pathStart = Math.min(item.pathStart, pathStart);
-                    pathEnd = Math.max(item.pathEnd, pathEnd);
-
-                    visibleItems += 1;
-
-                    $(item.listItem).addClass('visible');
-                } else {
-                    $(item.listItem).removeClass('visible');
-                }
-            });
-
-            if (visibleItems > 0 && pathStart < pathEnd) {
-                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
-                    tocPath.attr('stroke-dashoffset', '1');
-                    tocPath.attr('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
-                    tocPath.attr('opacity', 1);
-                }
-            } else {
-                tocPath.attr('opacity', 0);
-            }
-
-            lastPathStart = pathStart;
-            lastPathEnd = pathEnd;
-        }
-
-    </script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

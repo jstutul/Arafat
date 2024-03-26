@@ -205,6 +205,7 @@
 .mapping-img {
     max-width: 654px;
     margin: 0 auto;
+    text-align: center;
 }
 .design-ideation-img {
     width: 637px;
@@ -638,6 +639,7 @@
     }
     .design-ideation-img {
         width: 100%;
+        height: auto;
     }
     .higly-fidelity-design {
         width: 100%;
