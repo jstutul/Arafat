@@ -19,16 +19,21 @@
 }
 
 .contact-form .form-control {
-    border-radius: 15px;
-    border: 1px solid var(--70-e-87-c, #70e87c);
+    border-radius: 20px;
+    border: 1px solid #70e87c;
     background-color: #000000;
     color: #fff;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.contact-form .textarea {
+    height: auto;
 }
 .contact-form button {
     border-radius: 20px;
-    border: 1px solid var(--70-e-87-c, #70e87c);
+    border: 1px solid #70e87c;
     background: none;
-    color: var(--70-e-87-c, #70e87c);
+    color: #70e87c;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -47,11 +52,17 @@
     margin-bottom: 81px;
 }
 .form-control::placeholder {
-    color: #fff;
-    opacity: 1; /* Firefox */
+    color: #767676;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 32.505px */
 }
 
 .form-control::-ms-input-placeholder {
-    /* Edge 12 -18 */
-    color: #fff;
+    color: #767676;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 32.505px */
 }

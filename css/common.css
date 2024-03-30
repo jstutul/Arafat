@@ -50,6 +50,8 @@ header .navbar {
 header .navbar-brand,
 header .navbar-brand:hover {
     color: var(--lighashcolor);
+    font-size: 22px;
+    font-weight: 600;
 }
 header .navbar .nav-link,
 header .navbar .nav-link:hover,
@@ -150,12 +152,16 @@ main .heading-title {
     row-gap: 40px;
 }
 
-.btntop {
+.right-side {
+    text-align: right;
     display: none;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     z-index: 99;
+}
+.btntop {
+    width: 50px;
 }
 .copyright {
     position: relative;

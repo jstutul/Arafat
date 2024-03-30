@@ -1,7 +1,7 @@
 const date = new Date();
 let year = date.getFullYear();
-document.getElementById("copyDate").innerHTML = year;
-const button = document.querySelector(".btntop");
+document.getElementById("copyDate").innerHTML = "@" + year;
+const button = document.querySelector(".right-side");
 
 const displayButton = () => {
     window.addEventListener("scroll", () => {

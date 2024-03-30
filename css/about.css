@@ -9,6 +9,14 @@
     font-weight: 400;
     line-height: 162.523%;
 }
+
+.about-heading .green-title {
+    color: var(--70-e-87-c, #70e87c);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 71.51px */
+}
 .about-heading p {
     color: #fff;
     font-size: 16px;
@@ -123,9 +131,22 @@
 .tab-content .tab-pane .fiver {
     margin: 0px 12px;
 }
-
-.tab-pane .exp-gpd {
+#experience .exp-gpd {
     color: #067ebe;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 39.005px */
+}
+#experience .exp-uiux {
+    color: #ad7aff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.523%; /* 39.005px */
+}
+.tab-pane .exp-gpd {
+    color: #067ebe !important;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -166,11 +187,11 @@
     margin: 0px 6px;
     flex: none;
 }
-.icon-zone img {
-    width: 25px;
-    height: 25px;
+/* .icon-zone img {
+    width: auto;
+    height: 30px;
     border-radius: 15px;
-}
+} */
 .pan-image {
     width: 25%;
 }
@@ -200,4 +221,14 @@
 .accordion-button:not(.collapsed) {
     color: #70e87c !important;
     box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/images/accordian.svg);
+}
+
+.accordion-button {
+    background-image: url(/images/according-un.svg);
+}
+.accordion-button.collapsed::after {
+    background-image: url(/images/according-un.svg);
 }
