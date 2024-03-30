@@ -157,7 +157,7 @@ main .heading-title {
     display: none;
     cursor: pointer;
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     z-index: 99;
 }
 .btntop {
