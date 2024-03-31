@@ -77,15 +77,20 @@
 .bprotfolio img {
     margin-bottom: 17px;
 }
-.bprotfolio .p-title {
+.bprotfolio .p-title a {
     color: #fff;
     text-align: center;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 45.5px;
+    text-decoration: none;
 }
-
+.p-title a:hover,
+.p-title:hover .svg-container svg path {
+    color: var(--darkmaincolor); /* Change the color to your desired color */
+    fill: var(--darkmaincolor); /* Change the fill color of the SVG to match */
+}
 .bprotfolio-gallary {
     width: 954px;
     margin: 0 auto;

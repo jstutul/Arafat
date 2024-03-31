@@ -2,6 +2,10 @@
     margin-top: 114px;
     margin-bottom: 107px;
 }
+.contact-form {
+    width: 85%;
+    margin: 0 auto;
+}
 .contact-form label {
     color: #fff;
     font-size: 20px;
@@ -23,8 +27,6 @@
     border: 1px solid #70e87c;
     background-color: #000000;
     color: #fff;
-    height: 50px;
-    margin-bottom: 15px;
 }
 .contact-form .textarea {
     height: auto;

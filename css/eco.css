@@ -101,6 +101,7 @@
 .sarasec {
     align-items: center;
 }
+
 .sarasec h2 {
     color: #fff;
     font-size: 24px;
@@ -126,7 +127,6 @@
     min-height: 297px;
 }
 .sara-img {
-    min-height: 297px;
     width: 341px;
 }
 .g-title {
