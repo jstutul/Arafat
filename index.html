@@ -358,7 +358,7 @@
 						<label for="sCode" class="form-label">Secrect Code</label>
 						<input type="text" class="form-control" id="sCode" placeholder="xxxx-xxxx-xxxx">
 					</div>
-					<button type="button" class="btn btn-primary">Login</button>
+					<button type="button" class="btn btn-primary" id="checkCode">Login</button>
 				</div>
 			</div>
 		</div>
@@ -404,10 +404,34 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/common.js"></script>
 	<script>
-		$(document).on('click', '.secure-btn', function () {
-			var id = $(this).attr("data-id");
-			$('#passwordModal').modal('toggle');
+		$(document).ready(function () {
+			$(document).on('click', '.secure-btn', function () {
+				$('#passwordModal').modal('toggle');
+			});
+			$(document).on('click', '#checkCode', function () {
+				var id = $(this).attr("data-id");
+				var enteredPassword = $("#sCode").val();
+				$.ajax({
+					url: "https://info.arafatalam.com/check-password",
+					type: "POST",
+					contentType: "application/json",
+					data: JSON.stringify({ password: enteredPassword }),
+					success: function (response) {
+						$('#passwordModal').modal('toggle');
+						$("#passwordModalLabel").val("");
+						if (response.status) {
+							window.location.href = id == 1 ? "bdjobs.html" : "bproperty.html";
+						} else {
+							alert(response.message);
+						}
+					},
+					error: function (xhr, status, error) {
+						console.error(xhr.responseText);
+					}
+				});
+			})
 		});
+
 	</script>
 </body>
 

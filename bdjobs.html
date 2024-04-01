@@ -21,6 +21,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/bdj.css" />
+    <script>
+        var ref = window.top.document.referrer;
+        console.log(ref, ref.indexOf("arafatalam.com"));
+        if (ref === "" || ref.indexOf("arafatalam.com") === -1) {
+            alert("You are not allowed to view this page.");
+            window.location.href = "https://arafatalam.com/";
+        }
+    </script>
 </head>
 
 
@@ -2047,6 +2055,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/common.js"></script>
+
 
 </body>
 

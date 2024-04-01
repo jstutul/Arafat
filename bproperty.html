@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/bproperty.css" />
+    <script>
+        var ref = window.top.document.referrer;
+        console.log(ref, ref.indexOf("arafatalam.com"));
+        if (ref === "" || ref.indexOf("arafatalam.com") === -1) {
+            alert("You are not allowed to view this page.");
+            window.location.href = "https://arafatalam.com/";
+        }
+    </script>
 
     <style>
         .sld .title h2 {
